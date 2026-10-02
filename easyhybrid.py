@@ -115,7 +115,6 @@ os.environ["PDYNAMO3_PARAMETERS"]   = "/home/fernando/programs/pDynamo3/paramete
 os.environ["PDYNAMO3_SCRATCH"]      = "/home/fernando/programs/pDynamo3/scratch"
 os.environ["PDYNAMO3_ORCACOMMAND"]  = "/home/fernando/programs/orca_6_1_0_linux_x86-64_shared_openmpi418/orca"
 os.environ["PDYNAMO3_XTBCOMMAND"]   = "/home/fernando/programs/xtb-6.6.1/bin/xtb"
-os.environ["PDYNAMO3_MOPACCOMMAND"] = "/home/fernando/programs/MOPAC2016A/bin/mopac"
 os.environ["PDYNAMO3_DFTBCOMMAND"]  = "/home/fernando/programs/dftbplus-24.1.x86_64-linux/bin/dftb+"
 sys.path.append("/home/fernando/programs/pDynamo3")
 #sys.path.append("/home/fernando/programs/amber24_src/lib/python3.12/site-packages")
@@ -167,14 +166,42 @@ def parse_bash_env_file(filepath):
     return env_vars
 
 
+PDYNAMO_HOME = os.environ.get("PDYNAMO3_HOME")
 try:
-    from paths import PDYNAMO_HOME
+    from paths import PDYNAMO_HOME as _ConfiguredPDYNAMO_HOME
+    PDYNAMO_HOME = _ConfiguredPDYNAMO_HOME
+except ImportError:
+    # The launcher may already have activated pDynamo3 without generating
+    # EasyHybrid's optional paths.py configuration file.
+    pass
+
+if PDYNAMO_HOME:
     shell_scripts = os.path.join(PDYNAMO_HOME, 'installation/shellScripts/environment_bash.com')
-    parse_bash_env_file(shell_scripts)
-    logging.info('Importing environment variables from: %s', shell_scripts)
-except Exception as e:
-    logging.warning('paths.py / PDYNAMO_HOME not found -- pDynamo3 environment '
-                     'variables were not imported (%s).', e)
+    environment_is_loaded = all(os.environ.get(name) for name in (
+        "PDYNAMO3_HOME", "PDYNAMO3_PARAMETERS", "PDYNAMO3_SCRATCH"
+    ))
+    if os.path.isfile(shell_scripts) and not environment_is_loaded:
+        parse_bash_env_file(shell_scripts)
+        logging.info('Importing environment variables from: %s', shell_scripts)
+elif os.path.isfile("paths.py"):
+    logging.warning('paths.py does not define PDYNAMO_HOME; pDynamo3 environment '
+                    'variables were not imported.')
+
+# MOPAC is installed alongside the other quantum chemistry programs in the
+# user's software tree. Respect explicit pDynamo configuration first, then
+# use PATH discovery for portable Conda or system installations.
+if not os.environ.get("PDYNAMO3_MOPACCOMMAND"):
+    import shutil
+    pdynamo_home = os.environ.get("PDYNAMO3_HOME")
+    mopac_command = None
+    if pdynamo_home:
+        software_mopac = os.path.join(os.path.dirname(pdynamo_home), "MOPAC", "bin", "mopac")
+        if os.path.isfile(software_mopac) and os.access(software_mopac, os.X_OK):
+            mopac_command = software_mopac
+    if mopac_command is None:
+        mopac_command = shutil.which("mopac")
+    if mopac_command:
+        os.environ["PDYNAMO3_MOPACCOMMAND"] = mopac_command
 
 
 
@@ -516,4 +543,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

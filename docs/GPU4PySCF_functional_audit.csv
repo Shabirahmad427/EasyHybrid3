@@ -1,0 +1,1064 @@
+catalog_index,catalog,name,family,libxc_ids,hybrid,range_separated,needs_laplacian,gpu_xc,status,detail
+0,LibXC,LDA_X,LDA,1,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1,LibXC,LDA_C_WIGNER,LDA,2,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+2,LibXC,LDA_C_RPA,LDA,3,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+3,LibXC,LDA_C_HL,LDA,4,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+4,LibXC,LDA_C_GL,LDA,5,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+5,LibXC,LDA_C_XALPHA,LDA,6,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+6,LibXC,LDA_C_VWN,LDA,7,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+7,LibXC,LDA_C_VWN_RPA,LDA,8,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+8,LibXC,LDA_C_PZ,LDA,9,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+9,LibXC,LDA_C_PZ_MOD,LDA,10,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+10,LibXC,LDA_C_OB_PZ,LDA,11,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+11,LibXC,LDA_C_PW,LDA,12,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+12,LibXC,LDA_C_PW_MOD,LDA,13,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+13,LibXC,LDA_C_OB_PW,LDA,14,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+14,LibXC,LDA_C_2D_AMGB,LDA,15,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+15,LibXC,LDA_C_2D_PRM,LDA,16,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+16,LibXC,LDA_C_VBH,LDA,17,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+17,LibXC,LDA_C_1D_CSC,LDA,18,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+18,LibXC,LDA_X_2D,LDA,19,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+19,LibXC,LDA_XC_TETER93,LDA,20,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+20,LibXC,LDA_X_1D_SOFT,LDA,21,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+21,LibXC,LDA_C_ML1,LDA,22,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+22,LibXC,LDA_C_ML2,LDA,23,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+23,LibXC,LDA_C_GOMBAS,LDA,24,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+24,LibXC,LDA_C_PW_RPA,LDA,25,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+25,LibXC,LDA_C_1D_LOOS,LDA,26,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+26,LibXC,LDA_C_RC04,LDA,27,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+27,LibXC,LDA_C_VWN_1,LDA,28,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+28,LibXC,LDA_C_VWN_2,LDA,29,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+29,LibXC,LDA_C_VWN_3,LDA,30,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+30,LibXC,LDA_C_VWN_4,LDA,31,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+31,LibXC,GGA_X_GAM,GGA,32,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+32,LibXC,GGA_C_GAM,GGA,33,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+33,LibXC,GGA_X_HCTH_A,GGA,34,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+34,LibXC,GGA_X_EV93,GGA,35,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+35,LibXC,HYB_MGGA_X_DLDF,MGGA,36,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+36,LibXC,MGGA_C_DLDF,MGGA,37,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+37,LibXC,GGA_X_BCGP,GGA,38,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+38,LibXC,GGA_C_ACGGA,GGA,39,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+39,LibXC,GGA_X_LAMBDA_OC2_N,GGA,40,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+40,LibXC,GGA_X_B86_R,GGA,41,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+41,LibXC,MGGA_XC_ZLP,MGGA,42,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+42,LibXC,LDA_XC_ZLP,LDA,43,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+43,LibXC,GGA_X_LAMBDA_CH_N,GGA,44,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+44,LibXC,GGA_X_LAMBDA_LO_N,GGA,45,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+45,LibXC,GGA_X_HJS_B88_V2,GGA,46,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+46,LibXC,GGA_C_Q2D,GGA,47,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+47,LibXC,GGA_X_Q2D,GGA,48,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+48,LibXC,GGA_X_PBE_MOL,GGA,49,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+49,LibXC,LDA_K_TF,LDA,50,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+50,LibXC,LDA_K_LP,LDA,51,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+51,LibXC,GGA_K_TFVW,GGA,52,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+52,LibXC,GGA_K_REVAPBEINT,GGA,53,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+53,LibXC,GGA_K_APBEINT,GGA,54,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+54,LibXC,GGA_K_REVAPBE,GGA,55,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+55,LibXC,GGA_X_AK13,GGA,56,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+56,LibXC,GGA_K_MEYER,GGA,57,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+57,LibXC,GGA_X_LV_RPW86,GGA,58,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+58,LibXC,GGA_X_PBE_TCA,GGA,59,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+59,LibXC,GGA_X_PBEINT,GGA,60,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+60,LibXC,GGA_C_ZPBEINT,GGA,61,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+61,LibXC,GGA_C_PBEINT,GGA,62,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+62,LibXC,GGA_C_ZPBESOL,GGA,63,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+63,LibXC,MGGA_XC_OTPSS_D,MGGA,64,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+64,LibXC,GGA_XC_OPBE_D,GGA,65,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+65,LibXC,GGA_XC_OPWLYP_D,GGA,66,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+66,LibXC,GGA_XC_OBLYP_D,GGA,67,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+67,LibXC,GGA_X_VMT84_GE,GGA,68,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+68,LibXC,GGA_X_VMT84_PBE,GGA,69,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+69,LibXC,GGA_X_VMT_GE,GGA,70,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+70,LibXC,GGA_X_VMT_PBE,GGA,71,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+71,LibXC,MGGA_C_CS,MGGA,72,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+72,LibXC,MGGA_C_MN12_SX,MGGA,73,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+73,LibXC,MGGA_C_MN12_L,MGGA,74,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+74,LibXC,MGGA_C_M11_L,MGGA,75,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+75,LibXC,MGGA_C_M11,MGGA,76,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+76,LibXC,MGGA_C_M08_SO,MGGA,77,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+77,LibXC,MGGA_C_M08_HX,MGGA,78,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+78,LibXC,GGA_C_N12_SX,GGA,79,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+79,LibXC,GGA_C_N12,GGA,80,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+80,LibXC,HYB_GGA_X_N12_SX,GGA,81,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+81,LibXC,GGA_X_N12,GGA,82,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+82,LibXC,GGA_C_REGTPSS,GGA,83,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+83,LibXC,GGA_C_OP_XALPHA,GGA,84,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+84,LibXC,GGA_C_OP_G96,GGA,85,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+85,LibXC,GGA_C_OP_PBE,GGA,86,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+86,LibXC,GGA_C_OP_B88,GGA,87,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+87,LibXC,GGA_C_FT97,GGA,88,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+88,LibXC,GGA_C_SPBE,GGA,89,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+89,LibXC,GGA_X_SSB_SW,GGA,90,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+90,LibXC,GGA_X_SSB,GGA,91,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+91,LibXC,GGA_X_SSB_D,GGA,92,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+92,LibXC,GGA_XC_HCTH_407P,GGA,93,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+93,LibXC,GGA_XC_HCTH_P76,GGA,94,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+94,LibXC,GGA_XC_HCTH_P14,GGA,95,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+95,LibXC,GGA_XC_B97_GGA1,GGA,96,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+96,LibXC,GGA_C_HCTH_A,GGA,97,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+97,LibXC,GGA_X_BPCCAC,GGA,98,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+98,LibXC,GGA_C_REVTCA,GGA,99,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+99,LibXC,GGA_C_TCA,GGA,100,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+100,LibXC,GGA_X_PBE,GGA,101,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+101,LibXC,GGA_X_PBE_R,GGA,102,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+102,LibXC,GGA_X_B86,GGA,103,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+103,LibXC,GGA_X_B86_MGC,GGA,105,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+104,LibXC,GGA_X_B88,GGA,106,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+105,LibXC,GGA_X_G96,GGA,107,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+106,LibXC,GGA_X_PW86,GGA,108,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+107,LibXC,GGA_X_PW91,GGA,109,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+108,LibXC,GGA_X_OPTX,GGA,110,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+109,LibXC,GGA_X_DK87_R1,GGA,111,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+110,LibXC,GGA_X_DK87_R2,GGA,112,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+111,LibXC,GGA_X_LG93,GGA,113,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+112,LibXC,GGA_X_FT97_A,GGA,114,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+113,LibXC,GGA_X_FT97_B,GGA,115,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+114,LibXC,GGA_X_PBE_SOL,GGA,116,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+115,LibXC,GGA_X_RPBE,GGA,117,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+116,LibXC,GGA_X_WC,GGA,118,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+117,LibXC,GGA_X_MPW91,GGA,119,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+118,LibXC,GGA_X_AM05,GGA,120,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+119,LibXC,GGA_X_PBEA,GGA,121,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+120,LibXC,GGA_X_MPBE,GGA,122,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+121,LibXC,GGA_X_XPBE,GGA,123,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+122,LibXC,GGA_X_2D_B86_MGC,GGA,124,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+123,LibXC,GGA_X_BAYESIAN,GGA,125,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+124,LibXC,GGA_X_PBE_JSJR,GGA,126,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+125,LibXC,GGA_X_2D_B88,GGA,127,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+126,LibXC,GGA_X_2D_B86,GGA,128,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+127,LibXC,GGA_X_2D_PBE,GGA,129,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+128,LibXC,GGA_C_PBE,GGA,130,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+129,LibXC,GGA_C_LYP,GGA,131,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+130,LibXC,GGA_C_P86,GGA,132,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+131,LibXC,GGA_C_PBE_SOL,GGA,133,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+132,LibXC,GGA_C_PW91,GGA,134,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+133,LibXC,GGA_C_AM05,GGA,135,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+134,LibXC,GGA_C_XPBE,GGA,136,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+135,LibXC,GGA_C_LM,GGA,137,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+136,LibXC,GGA_C_PBE_JRGX,GGA,138,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+137,LibXC,GGA_X_OPTB88_VDW,GGA,139,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+138,LibXC,GGA_X_PBEK1_VDW,GGA,140,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+139,LibXC,GGA_X_OPTPBE_VDW,GGA,141,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+140,LibXC,GGA_X_RGE2,GGA,142,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+141,LibXC,GGA_C_RGE2,GGA,143,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+142,LibXC,GGA_X_RPW86,GGA,144,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+143,LibXC,GGA_X_KT1,GGA,145,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+144,LibXC,GGA_XC_KT2,GGA,146,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+145,LibXC,GGA_C_WL,GGA,147,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+146,LibXC,GGA_C_WI,GGA,148,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+147,LibXC,GGA_X_MB88,GGA,149,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+148,LibXC,GGA_X_SOGGA,GGA,150,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+149,LibXC,GGA_X_SOGGA11,GGA,151,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+150,LibXC,GGA_C_SOGGA11,GGA,152,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+151,LibXC,GGA_C_WI0,GGA,153,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+152,LibXC,GGA_XC_TH1,GGA,154,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+153,LibXC,GGA_XC_TH2,GGA,155,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+154,LibXC,GGA_XC_TH3,GGA,156,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+155,LibXC,GGA_XC_TH4,GGA,157,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+156,LibXC,GGA_X_C09X,GGA,158,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+157,LibXC,GGA_C_SOGGA11_X,GGA,159,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+158,LibXC,GGA_X_LB,,,,,,,gpu_kernel_crash,Native CUDA LibXC initialization/evaluation crashed the worker process
+159,LibXC,GGA_XC_HCTH_93,GGA,161,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+160,LibXC,GGA_XC_HCTH_120,GGA,162,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+161,LibXC,GGA_XC_HCTH_147,GGA,163,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+162,LibXC,GGA_XC_HCTH_407,GGA,164,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+163,LibXC,GGA_XC_EDF1,GGA,165,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+164,LibXC,GGA_XC_XLYP,GGA,166,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+165,LibXC,GGA_XC_KT1,GGA,167,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+166,LibXC,GGA_X_LSPBE,GGA,168,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+167,LibXC,GGA_X_LSRPBE,GGA,169,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+168,LibXC,GGA_XC_B97_D,GGA,170,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+169,LibXC,GGA_X_OPTB86B_VDW,GGA,171,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+170,LibXC,MGGA_C_REVM11,MGGA,172,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+171,LibXC,GGA_XC_PBE1W,GGA,173,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+172,LibXC,GGA_XC_MPWLYP1W,GGA,174,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+173,LibXC,GGA_XC_PBELYP1W,GGA,175,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+174,LibXC,GGA_C_ACGGAP,GGA,176,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+175,LibXC,HYB_LDA_XC_LDA0,LDA,177,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+176,LibXC,HYB_LDA_XC_CAM_LDA0,LDA,178,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+177,LibXC,GGA_X_B88_6311G,GGA,179,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+178,LibXC,GGA_X_NCAP,GGA,180,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+179,LibXC,GGA_XC_NCAP,GGA,181,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+180,LibXC,GGA_X_LBM,,,,,,,gpu_kernel_crash,Native CUDA LibXC initialization/evaluation crashed the worker process
+181,LibXC,GGA_X_OL2,GGA,183,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+182,LibXC,GGA_X_APBE,GGA,184,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+183,LibXC,GGA_K_APBE,GGA,185,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+184,LibXC,GGA_C_APBE,GGA,186,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+185,LibXC,GGA_K_TW1,GGA,187,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+186,LibXC,GGA_K_TW2,GGA,188,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+187,LibXC,GGA_K_TW3,GGA,189,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+188,LibXC,GGA_K_TW4,GGA,190,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+189,LibXC,GGA_X_HTBS,GGA,191,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+190,LibXC,GGA_X_AIRY,GGA,192,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+191,LibXC,GGA_X_LAG,GGA,193,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+192,LibXC,GGA_XC_MOHLYP,GGA,194,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+193,LibXC,GGA_XC_MOHLYP2,GGA,195,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+194,LibXC,GGA_XC_TH_FL,GGA,196,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+195,LibXC,GGA_XC_TH_FC,GGA,197,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+196,LibXC,GGA_XC_TH_FCFO,GGA,198,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+197,LibXC,GGA_XC_TH_FCO,GGA,199,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+198,LibXC,GGA_C_OPTC,GGA,200,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+199,LibXC,MGGA_X_LTA,MGGA,201,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+200,LibXC,MGGA_X_TPSS,MGGA,202,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+201,LibXC,MGGA_X_M06_L,MGGA,203,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+202,LibXC,MGGA_X_GVT4,MGGA,204,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+203,LibXC,MGGA_X_TAU_HCTH,MGGA,205,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+204,LibXC,MGGA_X_BR89,MGGA,206,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+205,LibXC,MGGA_X_BJ06,MGGA,207,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+206,LibXC,MGGA_X_TB09,MGGA,208,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+207,LibXC,MGGA_X_RPP09,MGGA,209,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+208,LibXC,MGGA_X_2D_PRHG07,MGGA,210,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+209,LibXC,MGGA_X_2D_PRHG07_PRP10,MGGA,211,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+210,LibXC,MGGA_X_REVTPSS,MGGA,212,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+211,LibXC,MGGA_X_PKZB,MGGA,213,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+212,LibXC,MGGA_X_BR89_1,MGGA,214,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+213,LibXC,GGA_X_ECMV92,GGA,215,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+214,LibXC,GGA_C_PBE_VWN,GGA,216,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+215,LibXC,GGA_C_P86_FT,GGA,217,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+216,LibXC,GGA_K_RATIONAL_P,GGA,218,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+217,LibXC,GGA_K_PG1,GGA,219,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+218,LibXC,MGGA_K_PGSL025,MGGA,220,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+219,LibXC,MGGA_X_MS0,MGGA,221,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+220,LibXC,MGGA_X_MS1,MGGA,222,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+221,LibXC,MGGA_X_MS2,MGGA,223,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+222,LibXC,HYB_MGGA_X_MS2H,MGGA,224,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+223,LibXC,MGGA_X_TH,MGGA,225,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+224,LibXC,MGGA_X_M11_L,MGGA,226,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+225,LibXC,MGGA_X_MN12_L,MGGA,227,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+226,LibXC,MGGA_X_MS2_REV,MGGA,228,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+227,LibXC,MGGA_XC_CC06,MGGA,229,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+228,LibXC,MGGA_X_MK00,MGGA,230,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+229,LibXC,MGGA_C_TPSS,MGGA,231,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+230,LibXC,MGGA_C_VSXC,MGGA,232,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+231,LibXC,MGGA_C_M06_L,MGGA,233,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+232,LibXC,MGGA_C_M06_HF,MGGA,234,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+233,LibXC,MGGA_C_M06,MGGA,235,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+234,LibXC,MGGA_C_M06_2X,MGGA,236,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+235,LibXC,MGGA_C_M05,MGGA,237,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+236,LibXC,MGGA_C_M05_2X,MGGA,238,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+237,LibXC,MGGA_C_PKZB,MGGA,239,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+238,LibXC,MGGA_C_BC95,MGGA,240,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+239,LibXC,MGGA_C_REVTPSS,MGGA,241,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+240,LibXC,MGGA_XC_TPSSLYP1W,MGGA,242,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+241,LibXC,MGGA_X_MK00B,MGGA,243,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+242,LibXC,MGGA_X_BLOC,MGGA,244,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+243,LibXC,MGGA_X_MODTPSS,MGGA,245,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+244,LibXC,GGA_C_PBELOC,GGA,246,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+245,LibXC,MGGA_C_TPSSLOC,MGGA,247,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+246,LibXC,HYB_MGGA_X_MN12_SX,MGGA,248,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+247,LibXC,MGGA_X_MBEEF,MGGA,249,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+248,LibXC,MGGA_X_MBEEFVDW,MGGA,250,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+249,LibXC,MGGA_C_TM,MGGA,251,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+250,LibXC,GGA_C_P86VWN,GGA,252,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+251,LibXC,GGA_C_P86VWN_FT,GGA,253,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+252,LibXC,MGGA_XC_B97M_V,MGGA,254,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+253,LibXC,GGA_XC_VV10,GGA,255,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+254,LibXC,MGGA_X_JK,MGGA,256,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+255,LibXC,MGGA_X_MVS,MGGA,257,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+256,LibXC,GGA_C_PBEFE,GGA,258,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+257,LibXC,LDA_XC_KSDT,LDA,259,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+258,LibXC,MGGA_X_MN15_L,MGGA,260,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+259,LibXC,MGGA_C_MN15_L,MGGA,261,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+260,LibXC,GGA_C_OP_PW91,GGA,262,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+261,LibXC,MGGA_X_SCAN,MGGA,263,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+262,LibXC,HYB_MGGA_X_SCAN0,MGGA,264,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+263,LibXC,GGA_X_PBEFE,GGA,265,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+264,LibXC,HYB_GGA_XC_B97_1P,GGA,266,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+265,LibXC,MGGA_C_SCAN,MGGA,267,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+266,LibXC,HYB_MGGA_X_MN15,MGGA,268,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+267,LibXC,MGGA_C_MN15,MGGA,269,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+268,LibXC,GGA_X_CAP,GGA,270,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+269,LibXC,GGA_X_EB88,GGA,271,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+270,LibXC,GGA_C_PBE_MOL,GGA,272,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+271,LibXC,HYB_GGA_XC_PBE_MOL0,GGA,273,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+272,LibXC,HYB_GGA_XC_PBE_SOL0,GGA,274,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+273,LibXC,HYB_GGA_XC_PBEB0,GGA,275,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+274,LibXC,HYB_GGA_XC_PBE_MOLB0,GGA,276,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+275,LibXC,GGA_K_ABSP3,GGA,277,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+276,LibXC,GGA_K_ABSP4,GGA,278,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+277,LibXC,HYB_MGGA_X_BMK,MGGA,279,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+278,LibXC,GGA_C_BMK,GGA,280,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+279,LibXC,GGA_C_TAU_HCTH,GGA,281,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+280,LibXC,HYB_MGGA_X_TAU_HCTH,MGGA,282,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+281,LibXC,GGA_C_HYB_TAU_HCTH,GGA,283,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+282,LibXC,MGGA_X_B00,MGGA,284,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+283,LibXC,GGA_X_BEEFVDW,GGA,285,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+284,LibXC,GGA_XC_BEEFVDW,GGA,286,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+285,LibXC,LDA_C_CHACHIYO,LDA,287,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+286,LibXC,MGGA_XC_HLE17,MGGA,288,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+287,LibXC,LDA_C_LP96,LDA,289,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+288,LibXC,HYB_GGA_XC_PBE50,GGA,290,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+289,LibXC,GGA_X_PBETRANS,GGA,291,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+290,LibXC,MGGA_C_SCAN_RVV10,MGGA,292,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+291,LibXC,MGGA_X_REVM06_L,MGGA,293,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+292,LibXC,MGGA_C_REVM06_L,MGGA,294,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+293,LibXC,HYB_MGGA_X_M08_HX,MGGA,295,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+294,LibXC,HYB_MGGA_X_M08_SO,MGGA,296,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+295,LibXC,HYB_MGGA_X_M11,MGGA,297,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+296,LibXC,GGA_X_CHACHIYO,GGA,298,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+297,LibXC,MGGA_X_RTPSS,MGGA,299,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+298,LibXC,MGGA_X_MS2B,MGGA,300,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+299,LibXC,MGGA_X_MS2BS,MGGA,301,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+300,LibXC,MGGA_X_MVSB,MGGA,302,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+301,LibXC,MGGA_X_MVSBS,MGGA,303,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+302,LibXC,HYB_MGGA_X_REVM11,MGGA,304,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+303,LibXC,HYB_MGGA_X_REVM06,MGGA,305,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+304,LibXC,MGGA_C_REVM06,MGGA,306,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+305,LibXC,LDA_C_CHACHIYO_MOD,LDA,307,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+306,LibXC,LDA_C_KARASIEV_MOD,LDA,308,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+307,LibXC,GGA_C_CHACHIYO,GGA,309,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+308,LibXC,HYB_MGGA_X_M06_SX,MGGA,310,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+309,LibXC,MGGA_C_M06_SX,MGGA,311,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+310,LibXC,GGA_X_REVSSB_D,GGA,312,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+311,LibXC,GGA_C_CCDF,GGA,313,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+312,LibXC,HYB_GGA_XC_HFLYP,GGA,314,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+313,LibXC,HYB_GGA_XC_B3P86_NWCHEM,GGA,315,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+314,LibXC,GGA_X_PW91_MOD,GGA,316,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+315,LibXC,LDA_C_W20,LDA,317,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+316,LibXC,LDA_XC_CORRKSDT,LDA,318,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+317,LibXC,MGGA_X_FT98,MGGA,319,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+318,LibXC,GGA_X_PBE_MOD,GGA,320,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+319,LibXC,GGA_X_PBE_GAUSSIAN,GGA,321,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+320,LibXC,GGA_C_PBE_GAUSSIAN,GGA,322,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+321,LibXC,MGGA_C_TPSS_GAUSSIAN,MGGA,323,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+322,LibXC,GGA_X_NCAPR,GGA,324,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+323,LibXC,HYB_GGA_XC_RELPBE0,GGA,325,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+324,LibXC,MGGA_X_EEL,MGGA,326,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+325,LibXC,GGA_XC_B97_3C,GGA,327,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+326,LibXC,LDA_C_EPC17,LDA,328,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+327,LibXC,LDA_C_EPC17_2,LDA,329,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+328,LibXC,LDA_C_EPC18_1,LDA,330,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+329,LibXC,LDA_C_EPC18_2,LDA,331,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+330,LibXC,GGA_X_BKL1,GGA,338,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+331,LibXC,GGA_X_BKL2,GGA,339,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+332,LibXC,HYB_MGGA_X_CF22D,MGGA,340,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+333,LibXC,MGGA_C_CF22D,MGGA,341,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+334,LibXC,MGGA_X_LAK,MGGA,342,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+335,LibXC,HYB_GGA_XC_OPB3LYP,GGA,386,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+336,LibXC,MGGA_C_CC,MGGA,387,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+337,LibXC,MGGA_C_CCALDA,MGGA,388,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+338,LibXC,HYB_MGGA_XC_BR3P86,MGGA,389,True,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+339,LibXC,HYB_GGA_XC_CASE21,GGA,390,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+340,LibXC,MGGA_C_RREGTM,MGGA,391,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+341,LibXC,HYB_GGA_XC_PBE_2X,GGA,392,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+342,LibXC,HYB_GGA_XC_PBE38,GGA,393,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+343,LibXC,HYB_GGA_XC_B3LYP3,GGA,394,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+344,LibXC,HYB_GGA_XC_CAM_O3LYP,GGA,395,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+345,LibXC,HYB_MGGA_XC_TPSS0,MGGA,396,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+346,LibXC,MGGA_C_B94,MGGA,397,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+347,LibXC,HYB_MGGA_XC_B94_HYB,MGGA,398,True,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+348,LibXC,HYB_GGA_XC_WB97X_D3,GGA,399,True,False,False,True,unsupported_method,GPU4PySCF does not implement this named dispersion variant
+349,LibXC,HYB_GGA_XC_LC_BLYP,GGA,400,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+350,LibXC,HYB_GGA_XC_B3PW91,GGA,401,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+351,LibXC,HYB_GGA_XC_B3LYP,GGA,402,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+352,LibXC,HYB_GGA_XC_B3P86,GGA,403,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+353,LibXC,HYB_GGA_XC_O3LYP,GGA,404,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+354,LibXC,HYB_GGA_XC_MPW1K,GGA,405,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+355,LibXC,HYB_GGA_XC_PBEH,GGA,406,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+356,LibXC,HYB_GGA_XC_B97,GGA,407,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+357,LibXC,HYB_GGA_XC_B97_1,GGA,408,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+358,LibXC,HYB_GGA_XC_APF,GGA,409,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+359,LibXC,HYB_GGA_XC_B97_2,GGA,410,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+360,LibXC,HYB_GGA_XC_X3LYP,GGA,411,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+361,LibXC,HYB_GGA_XC_B1WC,GGA,412,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+362,LibXC,HYB_GGA_XC_B97_K,GGA,413,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+363,LibXC,HYB_GGA_XC_B97_3,GGA,414,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+364,LibXC,HYB_GGA_XC_MPW3PW,GGA,415,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+365,LibXC,HYB_GGA_XC_B1LYP,GGA,416,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+366,LibXC,HYB_GGA_XC_B1PW91,GGA,417,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+367,LibXC,HYB_GGA_XC_MPW1PW,GGA,418,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+368,LibXC,HYB_GGA_XC_MPW3LYP,GGA,419,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+369,LibXC,HYB_GGA_XC_SB98_1A,GGA,420,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+370,LibXC,HYB_GGA_XC_SB98_1B,GGA,421,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+371,LibXC,HYB_GGA_XC_SB98_1C,GGA,422,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+372,LibXC,HYB_GGA_XC_SB98_2A,GGA,423,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+373,LibXC,HYB_GGA_XC_SB98_2B,GGA,424,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+374,LibXC,HYB_GGA_XC_SB98_2C,GGA,425,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+375,LibXC,HYB_GGA_X_SOGGA11_X,,,,,,,gpu_kernel_crash,Native CUDA LibXC initialization/evaluation crashed the worker process
+376,LibXC,HYB_GGA_XC_HSE03,GGA,427,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+377,LibXC,HYB_GGA_XC_HSE06,GGA,428,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+378,LibXC,HYB_GGA_XC_HJS_PBE,GGA,429,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+379,LibXC,HYB_GGA_XC_HJS_PBE_SOL,GGA,430,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+380,LibXC,HYB_GGA_XC_HJS_B88,GGA,431,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+381,LibXC,HYB_GGA_XC_HJS_B97X,GGA,432,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+382,LibXC,HYB_GGA_XC_CAM_B3LYP,GGA,433,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+383,LibXC,HYB_GGA_XC_TUNED_CAM_B3LYP,GGA,434,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+384,LibXC,HYB_GGA_XC_BHANDH,GGA,435,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+385,LibXC,HYB_GGA_XC_BHANDHLYP,GGA,436,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+386,LibXC,HYB_GGA_XC_MB3LYP_RC04,GGA,437,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+387,LibXC,HYB_MGGA_X_M05,MGGA,438,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+388,LibXC,HYB_MGGA_X_M05_2X,MGGA,439,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+389,LibXC,HYB_MGGA_XC_B88B95,MGGA,440,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+390,LibXC,HYB_MGGA_XC_B86B95,MGGA,441,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+391,LibXC,HYB_MGGA_XC_PW86B95,MGGA,442,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+392,LibXC,HYB_MGGA_XC_BB1K,MGGA,443,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+393,LibXC,HYB_MGGA_X_M06_HF,MGGA,444,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+394,LibXC,HYB_MGGA_XC_MPW1B95,MGGA,445,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+395,LibXC,HYB_MGGA_XC_MPWB1K,MGGA,446,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+396,LibXC,HYB_MGGA_XC_X1B95,MGGA,447,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+397,LibXC,HYB_MGGA_XC_XB1K,MGGA,448,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+398,LibXC,HYB_MGGA_X_M06,MGGA,449,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+399,LibXC,HYB_MGGA_X_M06_2X,MGGA,450,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+400,LibXC,HYB_MGGA_XC_PW6B95,MGGA,451,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+401,LibXC,HYB_MGGA_XC_PWB6K,MGGA,452,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+402,LibXC,HYB_GGA_XC_MPWLYP1M,GGA,453,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+403,LibXC,HYB_GGA_XC_REVB3LYP,GGA,454,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+404,LibXC,HYB_GGA_XC_CAMY_BLYP,GGA,455,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+405,LibXC,HYB_GGA_XC_PBE0_13,GGA,456,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+406,LibXC,HYB_MGGA_XC_TPSSH,MGGA,457,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+407,LibXC,HYB_MGGA_XC_REVTPSSH,,,,,,,gpu_kernel_crash,Native CUDA LibXC initialization/evaluation crashed the worker process
+408,LibXC,HYB_GGA_XC_B3LYPS,GGA,459,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+409,LibXC,HYB_GGA_XC_QTP17,GGA,460,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+410,LibXC,HYB_GGA_XC_B3LYP_MCM1,GGA,461,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+411,LibXC,HYB_GGA_XC_B3LYP_MCM2,GGA,462,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+412,LibXC,HYB_GGA_XC_WB97,GGA,463,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+413,LibXC,HYB_GGA_XC_WB97X,GGA,464,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+414,LibXC,HYB_GGA_XC_LRC_WPBEH,GGA,465,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+415,LibXC,HYB_GGA_XC_WB97X_V,GGA,466,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+416,LibXC,HYB_GGA_XC_LCY_PBE,GGA,467,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+417,LibXC,HYB_GGA_XC_LCY_BLYP,GGA,468,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+418,LibXC,HYB_GGA_XC_LC_VV10,GGA,469,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+419,LibXC,HYB_GGA_XC_CAMY_B3LYP,GGA,470,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+420,LibXC,HYB_GGA_XC_WB97X_D,GGA,471,True,False,False,True,unsupported_method,GPU4PySCF does not implement this named dispersion variant
+421,LibXC,HYB_GGA_XC_HPBEINT,GGA,472,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+422,LibXC,HYB_GGA_XC_LRC_WPBE,GGA,473,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+423,LibXC,HYB_MGGA_X_MVSH,MGGA,474,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+424,LibXC,HYB_GGA_XC_B3LYP5,GGA,475,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+425,LibXC,HYB_GGA_XC_EDF2,GGA,476,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+426,LibXC,HYB_GGA_XC_CAP0,GGA,477,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+427,LibXC,HYB_GGA_XC_LC_WPBE,GGA,478,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+428,LibXC,HYB_GGA_XC_HSE12,GGA,479,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+429,LibXC,HYB_GGA_XC_HSE12S,GGA,480,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+430,LibXC,HYB_GGA_XC_HSE_SOL,GGA,481,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+431,LibXC,HYB_GGA_XC_CAM_QTP_01,GGA,482,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+432,LibXC,HYB_GGA_XC_MPW1LYP,GGA,483,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+433,LibXC,HYB_GGA_XC_MPW1PBE,GGA,484,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+434,LibXC,HYB_GGA_XC_KMLYP,GGA,485,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+435,LibXC,HYB_GGA_XC_LC_WPBE_WHS,GGA,486,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+436,LibXC,HYB_GGA_XC_LC_WPBEH_WHS,GGA,487,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+437,LibXC,HYB_GGA_XC_LC_WPBE08_WHS,GGA,488,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+438,LibXC,HYB_GGA_XC_LC_WPBESOL_WHS,GGA,489,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+439,LibXC,HYB_GGA_XC_CAM_QTP_00,GGA,490,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+440,LibXC,HYB_GGA_XC_CAM_QTP_02,GGA,491,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+441,LibXC,HYB_GGA_XC_LC_QTP,GGA,492,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+442,LibXC,MGGA_X_RSCAN,MGGA,493,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+443,LibXC,MGGA_C_RSCAN,MGGA,494,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+444,LibXC,GGA_X_S12G,GGA,495,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+445,LibXC,HYB_GGA_X_S12H,GGA,496,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+446,LibXC,MGGA_X_R2SCAN,MGGA,497,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+447,LibXC,MGGA_C_R2SCAN,MGGA,498,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+448,LibXC,HYB_GGA_XC_BLYP35,GGA,499,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+449,LibXC,GGA_K_VW,GGA,500,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+450,LibXC,GGA_K_GE2,GGA,501,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+451,LibXC,GGA_K_GOLDEN,GGA,502,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+452,LibXC,GGA_K_YT65,GGA,503,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+453,LibXC,GGA_K_BALTIN,GGA,504,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+454,LibXC,GGA_K_LIEB,GGA,505,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+455,LibXC,GGA_K_ABSP1,GGA,506,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+456,LibXC,GGA_K_ABSP2,GGA,507,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+457,LibXC,GGA_K_GR,GGA,508,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+458,LibXC,GGA_K_LUDENA,GGA,509,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+459,LibXC,GGA_K_GP85,GGA,510,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+460,LibXC,GGA_K_PEARSON,GGA,511,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+461,LibXC,GGA_K_OL1,GGA,512,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+462,LibXC,GGA_K_OL2,GGA,513,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+463,LibXC,GGA_K_FR_B88,GGA,514,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+464,LibXC,GGA_K_FR_PW86,GGA,515,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+465,LibXC,GGA_K_DK,GGA,516,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+466,LibXC,GGA_K_PERDEW,GGA,517,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+467,LibXC,GGA_K_VSK,GGA,518,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+468,LibXC,GGA_K_VJKS,GGA,519,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+469,LibXC,GGA_K_ERNZERHOF,GGA,520,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+470,LibXC,GGA_K_LC94,GGA,521,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+471,LibXC,GGA_K_LLP,GGA,522,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+472,LibXC,GGA_K_THAKKAR,GGA,523,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+473,LibXC,GGA_X_WPBEH,GGA,524,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+474,LibXC,GGA_X_HJS_PBE,GGA,525,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+475,LibXC,GGA_X_HJS_PBE_SOL,GGA,526,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+476,LibXC,GGA_X_HJS_B88,GGA,527,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+477,LibXC,GGA_X_HJS_B97X,GGA,528,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+478,LibXC,GGA_X_ITYH,GGA,529,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+479,LibXC,GGA_X_SFAT,GGA,530,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+480,LibXC,HYB_MGGA_XC_WB97M_V,MGGA,531,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+481,LibXC,LDA_X_REL,LDA,532,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+482,LibXC,GGA_X_SG4,GGA,533,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+483,LibXC,GGA_C_SG4,GGA,534,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+484,LibXC,GGA_X_GG99,GGA,535,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+485,LibXC,LDA_XC_1D_EHWLRG_1,LDA,536,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+486,LibXC,LDA_XC_1D_EHWLRG_2,LDA,537,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+487,LibXC,LDA_XC_1D_EHWLRG_3,LDA,538,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+488,LibXC,GGA_X_PBEPOW,GGA,539,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+489,LibXC,MGGA_X_TM,MGGA,540,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+490,LibXC,MGGA_X_VT84,MGGA,541,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+491,LibXC,MGGA_X_SA_TPSS,MGGA,542,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+492,LibXC,MGGA_K_PC07,MGGA,543,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+493,LibXC,GGA_X_KGG99,GGA,544,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+494,LibXC,GGA_XC_HLE16,GGA,545,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+495,LibXC,LDA_X_ERF,LDA,546,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+496,LibXC,LDA_XC_LP_A,LDA,547,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+497,LibXC,LDA_XC_LP_B,LDA,548,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+498,LibXC,LDA_X_RAE,LDA,549,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+499,LibXC,LDA_K_ZLP,LDA,550,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+500,LibXC,LDA_C_MCWEENY,LDA,551,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+501,LibXC,LDA_C_BR78,LDA,552,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+502,LibXC,GGA_C_SCAN_E0,GGA,553,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+503,LibXC,LDA_C_PK09,LDA,554,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+504,LibXC,GGA_C_GAPC,GGA,555,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+505,LibXC,GGA_C_GAPLOC,GGA,556,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+506,LibXC,GGA_C_ZVPBEINT,GGA,557,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+507,LibXC,GGA_C_ZVPBESOL,GGA,558,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+508,LibXC,GGA_C_TM_LYP,GGA,559,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+509,LibXC,GGA_C_TM_PBE,GGA,560,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+510,LibXC,GGA_C_W94,GGA,561,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+511,LibXC,MGGA_C_KCIS,MGGA,562,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+512,LibXC,HYB_MGGA_XC_B0KCIS,MGGA,563,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+513,LibXC,MGGA_XC_LP90,MGGA,564,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+514,LibXC,GGA_C_CS1,GGA,565,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+515,LibXC,HYB_MGGA_XC_MPW1KCIS,MGGA,566,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+516,LibXC,HYB_MGGA_XC_MPWKCIS1K,MGGA,567,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+517,LibXC,HYB_MGGA_XC_PBE1KCIS,MGGA,568,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+518,LibXC,HYB_MGGA_XC_TPSS1KCIS,MGGA,569,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+519,LibXC,GGA_X_B88M,GGA,570,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+520,LibXC,MGGA_C_B88,MGGA,571,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+521,LibXC,HYB_GGA_XC_B5050LYP,GGA,572,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+522,LibXC,LDA_C_OW_LYP,LDA,573,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+523,LibXC,LDA_C_OW,LDA,574,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+524,LibXC,MGGA_X_GX,MGGA,575,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+525,LibXC,MGGA_X_PBE_GX,MGGA,576,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+526,LibXC,LDA_XC_GDSMFB,LDA,577,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+527,LibXC,LDA_C_GK72,LDA,578,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+528,LibXC,LDA_C_KARASIEV,LDA,579,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+529,LibXC,LDA_K_LP96,LDA,580,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+530,LibXC,MGGA_X_REVSCAN,MGGA,581,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+531,LibXC,MGGA_C_REVSCAN,MGGA,582,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+532,LibXC,HYB_MGGA_X_REVSCAN0,MGGA,583,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+533,LibXC,MGGA_C_SCAN_VV10,MGGA,584,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+534,LibXC,MGGA_C_REVSCAN_VV10,MGGA,585,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+535,LibXC,MGGA_X_BR89_EXPLICIT,MGGA,586,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+536,LibXC,GGA_XC_KT3,GGA,587,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+537,LibXC,HYB_LDA_XC_BN05,LDA,588,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+538,LibXC,HYB_GGA_XC_LB07,GGA,589,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+539,LibXC,LDA_C_PMGB06,LDA,590,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+540,LibXC,GGA_K_GDS08,GGA,591,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+541,LibXC,GGA_K_GHDS10,GGA,592,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+542,LibXC,GGA_K_GHDS10R,GGA,593,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+543,LibXC,GGA_K_TKVLN,GGA,594,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+544,LibXC,GGA_K_PBE3,GGA,595,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+545,LibXC,GGA_K_PBE4,GGA,596,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+546,LibXC,GGA_K_EXP4,GGA,597,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+547,LibXC,HYB_MGGA_XC_B98,MGGA,598,True,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+548,LibXC,LDA_XC_TIH,,,,,,,gpu_kernel_crash,Native CUDA LibXC initialization/evaluation crashed the worker process
+549,LibXC,LDA_X_1D_EXPONENTIAL,LDA,600,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+550,LibXC,GGA_X_SFAT_PBE,GGA,601,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+551,LibXC,MGGA_X_BR89_EXPLICIT_1,MGGA,602,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+552,LibXC,MGGA_X_REGTPSS,MGGA,603,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+553,LibXC,GGA_X_FD_LB94,GGA,604,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+554,LibXC,GGA_X_FD_REVLB94,GGA,605,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+555,LibXC,GGA_C_ZVPBELOC,GGA,606,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+556,LibXC,HYB_GGA_XC_APBE0,GGA,607,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+557,LibXC,HYB_GGA_XC_HAPBE,GGA,608,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+558,LibXC,MGGA_X_2D_JS17,MGGA,609,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+559,LibXC,HYB_GGA_XC_RCAM_B3LYP,GGA,610,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+560,LibXC,HYB_GGA_XC_WC04,GGA,611,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+561,LibXC,HYB_GGA_XC_WP04,GGA,612,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+562,LibXC,GGA_K_LKT,GGA,613,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+563,LibXC,HYB_GGA_XC_CAMH_B3LYP,GGA,614,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+564,LibXC,HYB_GGA_XC_WHPBE0,GGA,615,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+565,LibXC,GGA_K_PBE2,GGA,616,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+566,LibXC,MGGA_K_L04,MGGA,617,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+567,LibXC,MGGA_K_L06,MGGA,618,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+568,LibXC,GGA_K_VT84F,GGA,619,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+569,LibXC,GGA_K_LGAP,GGA,620,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+570,LibXC,MGGA_K_RDA,MGGA,621,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+571,LibXC,GGA_X_ITYH_OPTX,GGA,622,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+572,LibXC,GGA_X_ITYH_PBE,GGA,623,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+573,LibXC,GGA_C_LYPR,GGA,624,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+574,LibXC,HYB_GGA_XC_LC_BLYP_EA,GGA,625,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+575,LibXC,MGGA_X_REGTM,MGGA,626,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+576,LibXC,MGGA_K_GEA2,MGGA,627,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+577,LibXC,MGGA_K_GEA4,MGGA,628,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+578,LibXC,MGGA_K_CSK1,MGGA,629,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+579,LibXC,MGGA_K_CSK4,MGGA,630,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+580,LibXC,MGGA_K_CSK_LOC1,MGGA,631,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+581,LibXC,MGGA_K_CSK_LOC4,MGGA,632,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+582,LibXC,GGA_K_LGAP_GE,GGA,633,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+583,LibXC,MGGA_K_PC07_OPT,MGGA,634,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+584,LibXC,GGA_K_TFVW_OPT,GGA,635,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+585,LibXC,HYB_GGA_XC_LC_BOP,GGA,636,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+586,LibXC,HYB_GGA_XC_LC_PBEOP,GGA,637,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+587,LibXC,MGGA_C_KCISK,MGGA,638,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+588,LibXC,HYB_GGA_XC_LC_BLYPR,GGA,639,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+589,LibXC,HYB_GGA_XC_MCAM_B3LYP,GGA,640,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+590,LibXC,LDA_X_YUKAWA,LDA,641,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+591,LibXC,MGGA_C_R2SCAN01,MGGA,642,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+592,LibXC,MGGA_C_RMGGAC,MGGA,643,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+593,LibXC,MGGA_X_MCML,MGGA,644,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+594,LibXC,MGGA_X_R2SCAN01,MGGA,645,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+595,LibXC,HYB_GGA_X_CAM_S12G,GGA,646,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+596,LibXC,HYB_GGA_X_CAM_S12H,GGA,647,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+597,LibXC,MGGA_X_RPPSCAN,MGGA,648,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+598,LibXC,MGGA_C_RPPSCAN,MGGA,649,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+599,LibXC,MGGA_X_R4SCAN,MGGA,650,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+600,LibXC,MGGA_X_VCML,MGGA,651,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+601,LibXC,MGGA_XC_VCML_RVV10,MGGA,652,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+602,LibXC,HYB_LDA_X_ERF,LDA,653,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+603,LibXC,LDA_C_PW_ERF,LDA,654,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+604,LibXC,GGA_X_PBE_ERF_GWS,GGA,655,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+605,LibXC,HYB_GGA_X_PBE_ERF_GWS,GGA,656,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+606,LibXC,GGA_C_PBE_ERF_GWS,GGA,657,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+607,LibXC,HYB_MGGA_XC_GAS22,MGGA,658,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+608,LibXC,HYB_MGGA_XC_R2SCANH,MGGA,659,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+609,LibXC,HYB_MGGA_XC_R2SCAN0,MGGA,660,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+610,LibXC,HYB_MGGA_XC_R2SCAN50,MGGA,661,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+611,LibXC,HYB_GGA_XC_CAM_PBEH,GGA,681,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+612,LibXC,HYB_GGA_XC_CAMY_PBEH,GGA,682,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+613,LibXC,LDA_C_UPW92,LDA,683,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+614,LibXC,LDA_C_RPW92,LDA,684,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+615,LibXC,MGGA_X_TLDA,MGGA,685,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+616,LibXC,MGGA_X_EDMGGA,MGGA,686,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+617,LibXC,MGGA_X_GDME_NV,MGGA,687,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+618,LibXC,MGGA_X_RLDA,MGGA,688,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+619,LibXC,MGGA_X_GDME_0,MGGA,689,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+620,LibXC,MGGA_X_GDME_KOS,MGGA,690,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+621,LibXC,MGGA_X_GDME_VT,MGGA,691,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+622,LibXC,LDA_X_SLOC,LDA,692,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+623,LibXC,MGGA_X_REVTM,MGGA,693,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+624,LibXC,MGGA_C_REVTM,MGGA,694,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+625,LibXC,HYB_MGGA_XC_EDMGGAH,MGGA,695,True,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+626,LibXC,MGGA_X_MBRXC_BG,MGGA,696,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+627,LibXC,MGGA_X_MBRXH_BG,MGGA,697,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+628,LibXC,MGGA_X_HLTA,MGGA,698,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+629,LibXC,MGGA_C_HLTAPW,MGGA,699,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+630,LibXC,MGGA_X_SCANL,MGGA,700,False,False,True,True,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+631,LibXC,MGGA_X_REVSCANL,MGGA,701,False,False,True,True,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+632,LibXC,MGGA_C_SCANL,MGGA,702,False,False,True,True,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+633,LibXC,MGGA_C_SCANL_RVV10,MGGA,703,False,False,True,True,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+634,LibXC,MGGA_C_SCANL_VV10,MGGA,704,False,False,True,True,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+635,LibXC,HYB_MGGA_X_JS18,MGGA,705,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+636,LibXC,HYB_MGGA_X_PJS18,MGGA,706,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+637,LibXC,MGGA_X_TASK,MGGA,707,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+638,LibXC,MGGA_X_MGGAC,MGGA,711,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+639,LibXC,GGA_C_MGGAC,GGA,712,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+640,LibXC,MGGA_X_MBR,MGGA,716,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+641,LibXC,MGGA_X_R2SCANL,MGGA,718,False,False,True,True,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+642,LibXC,MGGA_C_R2SCANL,MGGA,719,False,False,True,True,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+643,LibXC,HYB_MGGA_XC_LC_TMLYP,MGGA,720,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+644,LibXC,MGGA_X_MTASK,MGGA,724,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+645,LibXC,GGA_X_Q1D,GGA,734,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+646,LibXC,MGGA_X_KTBM_0,MGGA,735,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+647,LibXC,MGGA_X_KTBM_1,MGGA,736,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+648,LibXC,MGGA_X_KTBM_2,MGGA,737,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+649,LibXC,MGGA_X_KTBM_3,MGGA,738,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+650,LibXC,MGGA_X_KTBM_4,MGGA,739,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+651,LibXC,MGGA_X_KTBM_5,MGGA,740,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+652,LibXC,MGGA_X_KTBM_6,MGGA,741,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+653,LibXC,MGGA_X_KTBM_7,MGGA,742,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+654,LibXC,MGGA_X_KTBM_8,MGGA,743,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+655,LibXC,MGGA_X_KTBM_9,MGGA,744,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+656,LibXC,MGGA_X_KTBM_10,MGGA,745,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+657,LibXC,MGGA_X_KTBM_11,MGGA,746,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+658,LibXC,MGGA_X_KTBM_12,MGGA,747,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+659,LibXC,MGGA_X_KTBM_13,MGGA,748,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+660,LibXC,MGGA_X_KTBM_14,MGGA,749,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+661,LibXC,MGGA_X_KTBM_15,MGGA,750,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+662,LibXC,MGGA_X_KTBM_16,MGGA,751,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+663,LibXC,MGGA_X_KTBM_17,MGGA,752,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+664,LibXC,MGGA_X_KTBM_18,MGGA,753,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+665,LibXC,MGGA_X_KTBM_19,MGGA,754,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+666,LibXC,MGGA_X_KTBM_20,MGGA,755,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+667,LibXC,MGGA_X_KTBM_21,MGGA,756,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+668,LibXC,MGGA_X_KTBM_22,MGGA,757,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+669,LibXC,MGGA_X_KTBM_23,MGGA,758,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+670,LibXC,MGGA_X_KTBM_24,MGGA,759,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+671,LibXC,MGGA_X_KTBM_GAP,MGGA,760,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+672,LibXC,MGGA_X_MSPBEL,MGGA,761,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+673,LibXC,MGGA_X_RMSPBEL,MGGA,762,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+674,LibXC,MGGA_X_MSRPBEL,MGGA,763,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+675,LibXC,MGGA_X_RMSRPBEL,MGGA,764,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+676,LibXC,MGGA_X_MSB86BL,MGGA,765,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+677,LibXC,MGGA_X_RMSB86BL,MGGA,766,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+678,LibXC,LDA_K_GDS08_WORKER,LDA,100001,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+679,LibXC,LDA_C_VWNRPA,LDA,8,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+680,LibXC,LDA_C_PZMOD,LDA,10,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+681,LibXC,LDA_C_OBPZ,LDA,11,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+682,LibXC,LDA_C_PWMOD,LDA,13,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+683,LibXC,LDA_C_OBPW,LDA,14,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+684,LibXC,LDA_C_2DAMGB,LDA,15,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+685,LibXC,LDA_C_2DPRM,LDA,16,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+686,LibXC,LDA_C_1DCSC,LDA,18,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+687,LibXC,LDA_X_1DSOFT,LDA,21,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+688,LibXC,LDA_C_PWRPA,LDA,25,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+689,LibXC,LDA_C_1DLOOS,LDA,26,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+690,LibXC,LDA_C_VWN1,LDA,28,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+691,LibXC,LDA_C_VWN2,LDA,29,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+692,LibXC,LDA_C_VWN3,LDA,30,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+693,LibXC,LDA_C_VWN4,LDA,31,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+694,LibXC,GGA_X_HCTHA,GGA,34,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+695,LibXC,GGA_X_LAMBDAOC2N,GGA,40,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+696,LibXC,GGA_X_B86R,GGA,41,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+697,LibXC,GGA_X_LAMBDACHN,GGA,44,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+698,LibXC,GGA_X_LAMBDALON,GGA,45,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+699,LibXC,GGA_X_HJSB88V2,GGA,46,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+700,LibXC,GGA_X_PBEMOL,GGA,49,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+701,LibXC,GGA_X_LVRPW86,GGA,58,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+702,LibXC,GGA_X_PBETCA,GGA,59,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+703,LibXC,MGGA_XC_OTPSSD,MGGA,64,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+704,LibXC,GGA_XC_OPBED,GGA,65,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+705,LibXC,GGA_XC_OPWLYPD,GGA,66,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+706,LibXC,GGA_XC_OBLYPD,GGA,67,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+707,LibXC,GGA_X_VMT84GE,GGA,68,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+708,LibXC,GGA_X_VMT84PBE,GGA,69,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+709,LibXC,GGA_X_VMTGE,GGA,70,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+710,LibXC,GGA_X_VMTPBE,GGA,71,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+711,LibXC,MGGA_C_MN12SX,MGGA,73,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+712,LibXC,MGGA_C_MN12L,MGGA,74,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+713,LibXC,MGGA_C_M11L,MGGA,75,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+714,LibXC,MGGA_C_M08SO,MGGA,77,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+715,LibXC,MGGA_C_M08HX,MGGA,78,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+716,LibXC,GGA_C_N12SX,GGA,79,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+717,LibXC,HYB_GGA_X_N12SX,GGA,81,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+718,LibXC,GGA_C_OPXALPHA,GGA,84,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+719,LibXC,GGA_C_OPG96,GGA,85,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+720,LibXC,GGA_C_OPPBE,GGA,86,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+721,LibXC,GGA_C_OPB88,GGA,87,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+722,LibXC,GGA_X_SSBSW,GGA,90,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+723,LibXC,GGA_X_SSBD,GGA,92,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+724,LibXC,GGA_XC_HCTH407P,GGA,93,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+725,LibXC,GGA_XC_HCTHP76,GGA,94,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+726,LibXC,GGA_XC_HCTHP14,GGA,95,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+727,LibXC,GGA_XC_B97GGA1,GGA,96,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+728,LibXC,GGA_C_HCTHA,GGA,97,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+729,LibXC,GGA_X_PBER,GGA,102,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+730,LibXC,GGA_X_B86MGC,GGA,105,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+731,LibXC,GGA_X_DK87R1,GGA,111,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+732,LibXC,GGA_X_DK87R2,GGA,112,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+733,LibXC,GGA_X_FT97A,GGA,114,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+734,LibXC,GGA_X_FT97B,GGA,115,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+735,LibXC,GGA_X_PBESOL,GGA,116,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+736,LibXC,GGA_X_2DB86MGC,GGA,124,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+737,LibXC,GGA_X_PBEJSJR,GGA,126,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+738,LibXC,GGA_X_2DB88,GGA,127,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+739,LibXC,GGA_X_2DB86,GGA,128,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+740,LibXC,GGA_X_2DPBE,GGA,129,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+741,LibXC,GGA_C_PBESOL,GGA,133,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+742,LibXC,GGA_C_PBEJRGX,GGA,138,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+743,LibXC,GGA_X_OPTB88VDW,GGA,139,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+744,LibXC,GGA_X_PBEK1VDW,GGA,140,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+745,LibXC,GGA_X_OPTPBEVDW,GGA,141,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+746,LibXC,GGA_C_SOGGA11X,GGA,159,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+747,LibXC,GGA_XC_HCTH93,GGA,161,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+748,LibXC,GGA_XC_HCTH120,GGA,162,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+749,LibXC,GGA_XC_HCTH147,GGA,163,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+750,LibXC,GGA_XC_HCTH407,GGA,164,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+751,LibXC,GGA_XC_B97D,GGA,170,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+752,LibXC,GGA_X_OPTB86BVDW,GGA,171,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+753,LibXC,HYB_LDA_XC_CAMLDA0,LDA,178,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+754,LibXC,GGA_X_B886311G,GGA,179,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+755,LibXC,GGA_XC_THFL,GGA,196,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+756,LibXC,GGA_XC_THFC,GGA,197,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+757,LibXC,GGA_XC_THFCFO,GGA,198,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+758,LibXC,GGA_XC_THFCO,GGA,199,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+759,LibXC,MGGA_X_M06L,MGGA,203,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+760,LibXC,MGGA_X_TAUHCTH,MGGA,205,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+761,LibXC,MGGA_X_2DPRHG07,MGGA,210,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+762,LibXC,MGGA_X_2DPRHG07PRP10,MGGA,211,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+763,LibXC,MGGA_X_BR891,MGGA,214,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+764,LibXC,GGA_C_PBEVWN,GGA,216,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+765,LibXC,GGA_C_P86FT,GGA,217,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+766,LibXC,GGA_K_RATIONALP,GGA,218,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+767,LibXC,MGGA_X_M11L,MGGA,226,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+768,LibXC,MGGA_X_MN12L,MGGA,227,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+769,LibXC,MGGA_X_MS2REV,MGGA,228,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+770,LibXC,MGGA_C_M06L,MGGA,233,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+771,LibXC,MGGA_C_M06HF,MGGA,234,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+772,LibXC,MGGA_C_M062X,MGGA,236,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+773,LibXC,MGGA_C_M052X,MGGA,238,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+774,LibXC,HYB_MGGA_X_MN12SX,MGGA,248,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+775,LibXC,GGA_C_P86VWNFT,GGA,253,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+776,LibXC,MGGA_XC_B97MV,MGGA,254,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+777,LibXC,MGGA_X_MN15L,MGGA,260,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+778,LibXC,MGGA_C_MN15L,MGGA,261,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+779,LibXC,GGA_C_OPPW91,GGA,262,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+780,LibXC,HYB_GGA_XC_B971P,GGA,266,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+781,LibXC,GGA_C_PBEMOL,GGA,272,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+782,LibXC,HYB_GGA_XC_PBEMOL0,GGA,273,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+783,LibXC,HYB_GGA_XC_PBESOL0,GGA,274,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+784,LibXC,HYB_GGA_XC_PBEMOLB0,GGA,276,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+785,LibXC,GGA_C_TAUHCTH,GGA,281,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+786,LibXC,HYB_MGGA_X_TAUHCTH,MGGA,282,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+787,LibXC,GGA_C_HYBTAUHCTH,GGA,283,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+788,LibXC,MGGA_C_SCANRVV10,MGGA,292,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+789,LibXC,MGGA_X_REVM06L,MGGA,293,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+790,LibXC,MGGA_C_REVM06L,MGGA,294,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+791,LibXC,HYB_MGGA_X_M08HX,MGGA,295,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+792,LibXC,HYB_MGGA_X_M08SO,MGGA,296,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+793,LibXC,LDA_C_CHACHIYOMOD,LDA,307,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+794,LibXC,LDA_C_KARASIEVMOD,LDA,308,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+795,LibXC,HYB_MGGA_X_M06SX,MGGA,310,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+796,LibXC,MGGA_C_M06SX,MGGA,311,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+797,LibXC,GGA_X_REVSSBD,GGA,312,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+798,LibXC,HYB_GGA_XC_B3P86NWCHEM,GGA,315,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+799,LibXC,GGA_X_PW91MOD,GGA,316,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+800,LibXC,GGA_X_PBEMOD,GGA,320,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+801,LibXC,GGA_X_PBEGAUSSIAN,GGA,321,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+802,LibXC,GGA_C_PBEGAUSSIAN,GGA,322,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+803,LibXC,MGGA_C_TPSSGAUSSIAN,MGGA,323,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+804,LibXC,GGA_XC_B973C,GGA,327,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+805,LibXC,LDA_C_EPC172,LDA,329,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+806,LibXC,LDA_C_EPC181,LDA,330,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+807,LibXC,LDA_C_EPC182,LDA,331,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+808,LibXC,HYB_GGA_XC_PBE2X,GGA,392,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+809,LibXC,HYB_GGA_XC_CAMO3LYP,GGA,395,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+810,LibXC,HYB_MGGA_XC_B94HYB,MGGA,398,True,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+811,LibXC,HYB_GGA_XC_WB97XD3,GGA,399,True,False,False,True,unsupported_method,GPU4PySCF does not implement this named dispersion variant
+812,LibXC,HYB_GGA_XC_LCBLYP,GGA,400,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+813,LibXC,HYB_GGA_XC_B971,GGA,408,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+814,LibXC,HYB_GGA_XC_B972,GGA,410,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+815,LibXC,HYB_GGA_XC_B97K,GGA,413,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+816,LibXC,HYB_GGA_XC_B973,GGA,414,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+817,LibXC,HYB_GGA_XC_SB981A,GGA,420,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+818,LibXC,HYB_GGA_XC_SB981B,GGA,421,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+819,LibXC,HYB_GGA_XC_SB981C,GGA,422,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+820,LibXC,HYB_GGA_XC_SB982A,GGA,423,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+821,LibXC,HYB_GGA_XC_SB982B,GGA,424,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+822,LibXC,HYB_GGA_XC_SB982C,GGA,425,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+823,LibXC,HYB_GGA_X_SOGGA11X,,,,,,,gpu_kernel_crash,Native CUDA LibXC initialization/evaluation crashed the worker process
+824,LibXC,HYB_GGA_XC_HJSPBE,GGA,429,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+825,LibXC,HYB_GGA_XC_HJSPBESOL,GGA,430,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+826,LibXC,HYB_GGA_XC_HJSB88,GGA,431,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+827,LibXC,HYB_GGA_XC_HJSB97X,GGA,432,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+828,LibXC,HYB_GGA_XC_CAMB3LYP,GGA,433,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+829,LibXC,HYB_GGA_XC_TUNEDCAMB3LYP,GGA,434,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+830,LibXC,HYB_GGA_XC_MB3LYPRC04,GGA,437,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+831,LibXC,HYB_MGGA_X_M052X,MGGA,439,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+832,LibXC,HYB_MGGA_X_M06HF,MGGA,444,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+833,LibXC,HYB_MGGA_X_M062X,MGGA,450,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+834,LibXC,HYB_GGA_XC_CAMYBLYP,GGA,455,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+835,LibXC,HYB_GGA_XC_PBE013,GGA,456,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+836,LibXC,HYB_GGA_XC_B3LYPMCM1,GGA,461,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+837,LibXC,HYB_GGA_XC_B3LYPMCM2,GGA,462,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+838,LibXC,HYB_GGA_XC_LRCWPBEH,GGA,465,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+839,LibXC,HYB_GGA_XC_WB97XV,GGA,466,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+840,LibXC,HYB_GGA_XC_LCYPBE,GGA,467,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+841,LibXC,HYB_GGA_XC_LCYBLYP,GGA,468,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+842,LibXC,HYB_GGA_XC_LCVV10,GGA,469,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+843,LibXC,HYB_GGA_XC_CAMYB3LYP,GGA,470,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+844,LibXC,HYB_GGA_XC_WB97XD,GGA,471,True,False,False,True,unsupported_method,GPU4PySCF does not implement this named dispersion variant
+845,LibXC,HYB_GGA_XC_LRCWPBE,GGA,473,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+846,LibXC,HYB_GGA_XC_LCWPBE,GGA,478,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+847,LibXC,HYB_GGA_XC_HSESOL,GGA,481,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+848,LibXC,HYB_GGA_XC_CAMQTP01,GGA,482,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+849,LibXC,HYB_GGA_XC_LCWPBEWHS,GGA,486,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+850,LibXC,HYB_GGA_XC_LCWPBEHWHS,GGA,487,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+851,LibXC,HYB_GGA_XC_LCWPBE08WHS,GGA,488,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+852,LibXC,HYB_GGA_XC_LCWPBESOLWHS,GGA,489,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+853,LibXC,HYB_GGA_XC_CAMQTP00,GGA,490,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+854,LibXC,HYB_GGA_XC_CAMQTP02,GGA,491,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+855,LibXC,HYB_GGA_XC_LCQTP,GGA,492,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+856,LibXC,GGA_K_FRB88,GGA,514,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+857,LibXC,GGA_K_FRPW86,GGA,515,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+858,LibXC,GGA_X_HJSPBE,GGA,525,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+859,LibXC,GGA_X_HJSPBESOL,GGA,526,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+860,LibXC,GGA_X_HJSB88,GGA,527,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+861,LibXC,GGA_X_HJSB97X,GGA,528,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+862,LibXC,HYB_MGGA_XC_WB97MV,MGGA,531,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+863,LibXC,LDA_XC_1DEHWLRG1,LDA,536,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+864,LibXC,LDA_XC_1DEHWLRG2,LDA,537,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+865,LibXC,LDA_XC_1DEHWLRG3,LDA,538,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+866,LibXC,MGGA_X_SATPSS,MGGA,542,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+867,LibXC,LDA_XC_LPA,LDA,547,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+868,LibXC,LDA_XC_LPB,LDA,548,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+869,LibXC,GGA_C_SCANE0,GGA,553,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+870,LibXC,GGA_C_TMLYP,GGA,559,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+871,LibXC,GGA_C_TMPBE,GGA,560,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+872,LibXC,LDA_C_OWLYP,LDA,573,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+873,LibXC,MGGA_X_PBEGX,MGGA,576,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+874,LibXC,MGGA_C_SCANVV10,MGGA,584,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+875,LibXC,MGGA_C_REVSCANVV10,MGGA,585,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+876,LibXC,MGGA_X_BR89EXPLICIT,MGGA,586,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+877,LibXC,LDA_X_1DEXPONENTIAL,LDA,600,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+878,LibXC,GGA_X_SFATPBE,GGA,601,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+879,LibXC,MGGA_X_BR89EXPLICIT1,MGGA,602,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+880,LibXC,GGA_X_FDLB94,GGA,604,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+881,LibXC,GGA_X_FDREVLB94,GGA,605,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+882,LibXC,MGGA_X_2DJS17,MGGA,609,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+883,LibXC,HYB_GGA_XC_RCAMB3LYP,GGA,610,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+884,LibXC,HYB_GGA_XC_CAMHB3LYP,GGA,614,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+885,LibXC,GGA_X_ITYHOPTX,GGA,622,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+886,LibXC,GGA_X_ITYHPBE,GGA,623,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+887,LibXC,HYB_GGA_XC_LCBLYPEA,GGA,625,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+888,LibXC,MGGA_K_CSKLOC1,MGGA,631,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+889,LibXC,MGGA_K_CSKLOC4,MGGA,632,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+890,LibXC,GGA_K_LGAPGE,GGA,633,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+891,LibXC,MGGA_K_PC07OPT,MGGA,634,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+892,LibXC,GGA_K_TFVWOPT,GGA,635,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+893,LibXC,HYB_GGA_XC_LCBOP,GGA,636,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+894,LibXC,HYB_GGA_XC_LCPBEOP,GGA,637,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+895,LibXC,HYB_GGA_XC_LCBLYPR,GGA,639,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+896,LibXC,HYB_GGA_XC_MCAMB3LYP,GGA,640,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+897,LibXC,HYB_GGA_X_CAMS12G,GGA,646,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+898,LibXC,HYB_GGA_X_CAMS12H,GGA,647,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+899,LibXC,MGGA_XC_VCMLRVV10,MGGA,652,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+900,LibXC,LDA_C_PWERF,LDA,654,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+901,LibXC,GGA_X_PBEERFGWS,GGA,655,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+902,LibXC,HYB_GGA_X_PBEERFGWS,GGA,656,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+903,LibXC,GGA_C_PBEERFGWS,GGA,657,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+904,LibXC,HYB_GGA_XC_CAMPBEH,GGA,681,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+905,LibXC,HYB_GGA_XC_CAMYPBEH,GGA,682,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+906,LibXC,MGGA_X_GDMENV,MGGA,687,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+907,LibXC,MGGA_X_GDME0,MGGA,689,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+908,LibXC,MGGA_X_GDMEKOS,MGGA,690,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+909,LibXC,MGGA_X_GDMEVT,MGGA,691,False,False,True,False,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+910,LibXC,MGGA_X_MBRXCBG,MGGA,696,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+911,LibXC,MGGA_X_MBRXHBG,MGGA,697,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+912,LibXC,MGGA_C_SCANLRVV10,MGGA,703,False,False,True,True,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+913,LibXC,MGGA_C_SCANLVV10,MGGA,704,False,False,True,True,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+914,LibXC,HYB_MGGA_XC_LCTMLYP,MGGA,720,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+915,LibXC,MGGA_X_KTBM0,MGGA,735,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+916,LibXC,MGGA_X_KTBM1,MGGA,736,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+917,LibXC,MGGA_X_KTBM2,MGGA,737,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+918,LibXC,MGGA_X_KTBM3,MGGA,738,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+919,LibXC,MGGA_X_KTBM4,MGGA,739,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+920,LibXC,MGGA_X_KTBM5,MGGA,740,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+921,LibXC,MGGA_X_KTBM6,MGGA,741,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+922,LibXC,MGGA_X_KTBM7,MGGA,742,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+923,LibXC,MGGA_X_KTBM8,MGGA,743,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+924,LibXC,MGGA_X_KTBM9,MGGA,744,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+925,LibXC,MGGA_X_KTBM10,MGGA,745,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+926,LibXC,MGGA_X_KTBM11,MGGA,746,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+927,LibXC,MGGA_X_KTBM12,MGGA,747,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+928,LibXC,MGGA_X_KTBM13,MGGA,748,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+929,LibXC,MGGA_X_KTBM14,MGGA,749,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+930,LibXC,MGGA_X_KTBM15,MGGA,750,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+931,LibXC,MGGA_X_KTBM16,MGGA,751,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+932,LibXC,MGGA_X_KTBM17,MGGA,752,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+933,LibXC,MGGA_X_KTBM18,MGGA,753,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+934,LibXC,MGGA_X_KTBM19,MGGA,754,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+935,LibXC,MGGA_X_KTBM20,MGGA,755,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+936,LibXC,MGGA_X_KTBM21,MGGA,756,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+937,LibXC,MGGA_X_KTBM22,MGGA,757,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+938,LibXC,MGGA_X_KTBM23,MGGA,758,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+939,LibXC,MGGA_X_KTBM24,MGGA,759,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+940,LibXC,MGGA_X_KTBMGAP,MGGA,760,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+941,LibXC,LDA_K_GDS08WORKER,LDA,100001,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+942,LibXC,GGA_C_BCGP,GGA,39,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+943,LibXC,LDA,LDA,1,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+944,LibXC,SLATER,LDA,1,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+945,LibXC,VWN3,LDA,8,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+946,LibXC,VWNRPA,LDA,8,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+947,LibXC,VWN5,LDA,7,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+948,LibXC,B88,GGA,106,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+949,LibXC,PBE0,GGA,406,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+950,LibXC,PBE1PBE,GGA,406,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+951,LibXC,OPTXCORR,GGA,1;110,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+952,LibXC,B3LYP,GGA,402,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+953,LibXC,B3LYPG,GGA,402,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+954,LibXC,B3LYP5,GGA,1;7;106;131,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+955,LibXC,B3P86,GGA,403,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+956,LibXC,B3P86G,GGA,403,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+957,LibXC,B3P86V5,GGA,1;7;106;132,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+958,LibXC,O3LYP,GGA,404,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+959,LibXC,MPW3PW,GGA,1;7;119;134,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+960,LibXC,MPW3PW5,GGA,1;7;119;134,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+961,LibXC,MPW3PWG,GGA,415,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+962,LibXC,MPW3LYP,GGA,1;7;119;131,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+963,LibXC,MPW3LYP5,GGA,1;7;119;131,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+964,LibXC,MPW3LYPG,GGA,419,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+965,LibXC,REVB3LYP,GGA,1;7;106;131,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+966,LibXC,REVB3LYP5,GGA,1;7;106;131,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+967,LibXC,REVB3LYPG,GGA,454,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+968,LibXC,X3LYP,GGA,411,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+969,LibXC,X3LYPG,GGA,411,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+970,LibXC,X3LYP5,GGA,1;7;106;109;131,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+971,LibXC,CAMB3LYP,GGA,433,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+972,LibXC,CAMYBLYP,GGA,455,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+973,LibXC,CAMYB3LYP,GGA,470,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+974,LibXC,B5050LYP,GGA,1;7;106;131,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+975,LibXC,MPW1LYP,GGA,119;131,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+976,LibXC,MPW1PBE,GGA,119;130,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+977,LibXC,PBE50,GGA,101;130,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+978,LibXC,REVPBE0,GGA,102;130,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+979,LibXC,B1B95,MGGA,440,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+980,LibXC,TPSS0,MGGA,202;231,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+981,PySCF alias,BLYP,GGA,106;131,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+982,PySCF alias,BP86,GGA,106;132,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+983,PySCF alias,PW91,GGA,109;134,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+984,PySCF alias,PBE,GGA,101;130,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+985,PySCF alias,REVPBE,GGA,102;130,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+986,PySCF alias,PBESOL,GGA,116;133,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+987,PySCF alias,PKZB,MGGA,213;239,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+988,PySCF alias,TPSS,MGGA,202;231,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+989,PySCF alias,REVTPSS,MGGA,212;241,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+990,PySCF alias,SCAN,MGGA,263;267,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+991,PySCF alias,RSCAN,MGGA,493;494,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+992,PySCF alias,R2SCAN,MGGA,497;498,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+993,PySCF alias,SCANL,MGGA,700;702,False,False,True,True,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+994,PySCF alias,R2SCANL,MGGA,718;719,False,False,True,True,unsupported_laplacian,GPU4PySCF NumInt rejects meta-GGA functionals requiring density Laplacian
+995,PySCF alias,SOGGA,GGA,130;150,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+996,PySCF alias,BLOC,MGGA,244;247,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+997,PySCF alias,OLYP,GGA,110;131,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+998,PySCF alias,OPBE,GGA,110;130,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+999,PySCF alias,RPBE,GGA,117;130,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1000,PySCF alias,BPBE,GGA,106;130,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1001,PySCF alias,MPW91,GGA,119;134,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1002,PySCF alias,HFLYP,GGA,131,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1003,PySCF alias,HFPW92,LDA,13,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1004,PySCF alias,SPW92,LDA,1;13,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1005,PySCF alias,SVWN,LDA,1;7,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1006,PySCF alias,MS0,MGGA,83;221,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+1007,PySCF alias,MS1,MGGA,83;222,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+1008,PySCF alias,MS2,MGGA,83;223,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+1009,PySCF alias,MS2H,MGGA,83;224,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+1010,PySCF alias,MVS,MGGA,83;257,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+1011,PySCF alias,MVSH,MGGA,83;474,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+1012,PySCF alias,SOGGA11,GGA,151;152,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+1013,PySCF alias,SOGGA11_X,,,,,,,gpu_kernel_crash,Native CUDA LibXC initialization/evaluation crashed the worker process
+1014,PySCF alias,KT1,GGA,7;145,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+1015,PySCF alias,KT2,GGA,146,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+1016,PySCF alias,KT3,GGA,587,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+1017,PySCF alias,DLDF,MGGA,36;37,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+1018,PySCF alias,GAM,GGA,32;33,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+1019,PySCF alias,M06_L,MGGA,203;233,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1020,PySCF alias,M06_SX,MGGA,310;311,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1021,PySCF alias,M11_L,MGGA,75;226,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+1022,PySCF alias,MN12_L,MGGA,74;227,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+1023,PySCF alias,MN15_L,MGGA,260;261,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+1024,PySCF alias,N12,GGA,80;82,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+1025,PySCF alias,N12_SX,GGA,79;81,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+1026,PySCF alias,MN12_SX,MGGA,73;248,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+1027,PySCF alias,MN15,MGGA,268;269,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+1028,PySCF alias,MBEEF,MGGA,133;249,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+1029,PySCF alias,SCAN0,MGGA,264;267,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1030,PySCF alias,PBEOP,GGA,86;101,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1031,PySCF alias,BOP,GGA,87;106,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1032,PySCF alias,REVSCAN,MGGA,581;582,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1033,PySCF alias,REVSCAN_VV10,MGGA,581;585,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1034,PySCF alias,SCAN_VV10,MGGA,263;584,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1035,PySCF alias,SCAN_RVV10,MGGA,263;292,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1036,PySCF alias,M05,MGGA,237;438,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1037,PySCF alias,M06,MGGA,235;449,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1038,PySCF alias,M05_2X,MGGA,238;439,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1039,PySCF alias,M06_2X,MGGA,236;450,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1040,PySCF alias,M06_HF,MGGA,234;444,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1041,PySCF alias,CF22D,MGGA,340;341,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+1042,PySCF alias,SOGGA11X,,,,,,,gpu_kernel_crash,Native CUDA LibXC initialization/evaluation crashed the worker process
+1043,PySCF alias,M06L,MGGA,203;233,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1044,PySCF alias,M11L,MGGA,75;226,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+1045,PySCF alias,MN12L,MGGA,74;227,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+1046,PySCF alias,MN15L,MGGA,260;261,False,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+1047,PySCF alias,N12SX,GGA,79;81,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+1048,PySCF alias,MN12SX,MGGA,73;248,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+1049,PySCF alias,M052X,MGGA,238;439,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1050,PySCF alias,M062X,MGGA,236;450,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1051,PySCF alias,M06HF,MGGA,234;444,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1052,GPU4PySCF method,WB97X-D3BJ,GGA,466,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1053,GPU4PySCF method,WB97M-D3BJ,MGGA,531,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1054,GPU4PySCF method,B97M-D3BJ,MGGA,254,False,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1055,GPU4PySCF method,WB97X-D4,GGA,464,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1056,GPU4PySCF method,WB97M-D4,MGGA,531,True,False,False,True,gpu_xc_pass,CUDA LibXC energy density and first derivative finite
+1057,GPU4PySCF method,WB97X-3C,,,,,,,requires_dedicated_driver,GPU4PySCF 3c methods need their method-specific basis/ECP and correction path
+1058,GPU4PySCF method,B97-3C,,,,,,,requires_dedicated_driver,GPU4PySCF 3c methods need their method-specific basis/ECP and correction path
+1059,GPU4PySCF method,R2SCAN-3C,,,,,,,requires_dedicated_driver,GPU4PySCF 3c methods need their method-specific basis/ECP and correction path
+1060,GPU4PySCF method,CF22D,MGGA,340;341,True,False,False,False,cpu_xc_fallback_pass,GPU4PySCF evaluated one or more XC components through CPU PySCF LibXC
+1061,GPU4PySCF method,WB97X-D,GGA,471,True,False,False,True,unsupported_method,GPU4PySCF does not implement this named dispersion variant
+1062,GPU4PySCF method,WB97X-D3,,,,,,,unsupported_by_gpu4pyscf,wb97x-d3 is not supported yet.
