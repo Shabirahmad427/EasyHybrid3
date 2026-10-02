@@ -329,10 +329,20 @@ def install_vismol():
 #     from .QCModelXTB import _XTBCommand, \
 #                             QCModelXTB
 QC_MODULES = {
+    "MOPAC": {
+        "filename": "QCModelMOPAC.py",
+        "module":   "QCModelMOPAC",
+        "symbols":  ["_MOPACCommand", "QCModelMOPAC"],
+    },
     "xTB": {
         "filename": "QCModelXTB.py",
         "module":   "QCModelXTB",
         "symbols":  ["_XTBCommand", "QCModelXTB"],
+    },
+    "GPU4PySCF": {
+        "filename": "QCModelGPU4PySCF.py",
+        "module":   "QCModelGPU4PySCF",
+        "symbols":  ["QCModelGPU4PySCF"],
     },
     # add more here later, e.g.:
     # "SPARROW": {"filename": "QCModelSPARROW.py", "module": "QCModelSPARROW",

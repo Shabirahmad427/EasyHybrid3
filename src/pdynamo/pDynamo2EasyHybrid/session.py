@@ -108,6 +108,7 @@ from pdynamo.p_methods import NormalModes
 from pdynamo.p_methods import EnergyCalculation
 from pdynamo.p_methods import EnergyRefinement
 from pdynamo.p_methods import UmbrellaSampling
+from util.NBModelGPU4PySCF import NBModelGPU4PySCF
 
 from pdynamo.p_methods import WHAMAnalysis
 from pdynamo.LogFileWriter import LogFileReader
@@ -2237,6 +2238,23 @@ class pDynamoSession (pSimulations, pAnalysis, ModifyRepInVismol, LoadAndSaveDat
                                                 skfPath =              parameters["skfPath"             ],
                                                 useSCC =               parameters["useSCC"              ],
                                                  )
+
+        elif parameters['qcengine'] == 'GPU4PySCF':
+            gpu4pyscf_model = globals().get('QCModelGPU4PySCF')
+            if gpu4pyscf_model is None:
+                raise QCModelError(
+                    'GPU4PySCF is not registered in the active pDynamo3 environment. '
+                    'Run EasyHybrid3 install.py and select the GPU4PySCF QC module.'
+                )
+            qcModel = gpu4pyscf_model.WithOptions(
+                method=parameters.get('method', 'DFT'),
+                functional=parameters.get('functional', 'B3LYP'),
+                basis=parameters.get('basis', 'def2-svp'),
+                densityFitting=parameters.get('density_fitting', True),
+                maxCycles=parameters.get('max_cycles', 100),
+                convTolerance=parameters.get('conv_tolerance', 1.0e-9),
+                scratch=parameters.get('scratch'),
+            )
                                                  
             '''
             qcModel = QCModelDFTB.WithOptions ( deleteJobFiles = parameters['delete_job_files'],
@@ -2289,6 +2307,8 @@ class pDynamoSession (pSimulations, pAnalysis, ModifyRepInVismol, LoadAndSaveDat
                 
                 elif parameters['qcengine'] == 'DFTB+':
                     system.DefineNBModel (NBModelDFTB.WithDefaults ( ))
+                elif parameters['qcengine'] == 'GPU4PySCF':
+                    system.DefineNBModel (NBModelGPU4PySCF.WithDefaults ( ))
                 else:
                     system.DefineNBModel ( NBModelCutOff.WithDefaults ( ) )
             else:
