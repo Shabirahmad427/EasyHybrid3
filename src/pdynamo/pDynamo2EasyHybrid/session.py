@@ -542,6 +542,20 @@ class pDynamoSession (pSimulations, pAnalysis, ModifyRepInVismol, LoadAndSaveDat
                 
             #for i, atom in enumerate(system.atoms):
             #    print(i, atom.atomicNumber, atom.label)
+
+        elif system_type == 6:
+            # Load structure and reconstruct the saved model when its classes
+            # are supported by the version-neutral exchange reader.
+            from util.pdynamo_exchange import load_exchange_system
+            coordinates_path = input_files.get('coordinates')
+            if not coordinates_path:
+                raise ValueError('No exchange JSON was selected. Choose the .json manifest with Load Files first.')
+            system, exchange_manifest = load_exchange_system(coordinates_path)
+            if getattr(system, 'e_exchange_requires_energy_model', True):
+                message = 'Imported pDynamo2 structure ({:d} atoms); no supported saved energy model was available.'.format(len(system.atoms))
+            else:
+                message = 'Imported pDynamo2 system ({:d} atoms) with saved MM/QC models. Energy equivalence is not guaranteed across pDynamo versions.'.format(len(system.atoms))
+            self.main.bottom_notebook.status_teeview_add_new_item(message=message, system=None)
             
         elif system_type == 3 or system_type == 4 :
             coordinates_path = input_files['coordinates']
@@ -686,6 +700,18 @@ class pDynamoSession (pSimulations, pAnalysis, ModifyRepInVismol, LoadAndSaveDat
         """ Function doc """
         # Create a VisMol object from the given pDynamo system
         vm_object = self._build_vobject_from_pdynamo_system ( system = system, name = name ) 
+
+        # Portable pDynamo exchange manifests may carry many coordinate
+        # snapshots. Present them as one trajectory in the viewer while the
+        # pDynamo System retains the manifest's first frame as its coordinates.
+        exchange_frames = getattr(system, 'e_exchange_frames', None)
+        if exchange_frames is not None and len(exchange_frames) > 0:
+            frames = np.asarray(exchange_frames, dtype=np.float32)
+            expected_shape = (len(exchange_frames), len(system.atoms), 3)
+            if frames.shape != expected_shape:
+                raise ValueError('Exchange trajectory has an invalid coordinate array shape: {}.'.format(frames.shape))
+            vm_object.frames = frames
+            vm_object.mass_center = np.mean(frames[0], axis=0)
         
         if key6:
             vm_object.key6 = key6

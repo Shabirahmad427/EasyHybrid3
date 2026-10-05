@@ -1821,7 +1821,14 @@ class SurfaceAnalysisWindow(Gtk.Window):
         elif index == 0:
             selection     = self.treeview.get_selection()
             (model, iter) = selection.get_selected()
-        
+
+            # GTK returns (model, None) when no orbital/selection row is
+            # active.  Do not pass that None into TreeModel.get_value().
+            if model is None or iter is None:
+                self._show_wavefunction_error(
+                    "Select an orbital or atom selection before rendering.")
+                return False
+
             
             backup = []
             try:
@@ -3506,5 +3513,4 @@ class TreeViewMenu:
         self.system_id = system_id
         #print (vobject)
         self.tree_view_menu.popup(None, None, None, None, 0, 0)
-
 
