@@ -3,7 +3,7 @@ set -eu
 
 REPO_ROOT="$(cd "$(dirname "$0")/../../../.." && pwd)"
 cd "$REPO_ROOT"
-PYTHON="${EASYHYBRID3_PYTHON:-/Users/shabir/software/chem312/bin/python}"
+PYTHON="${EASYHYBRID3_PYTHON:-python3.12}"
 PYTHON_INCLUDE="$($PYTHON -c 'import sysconfig; print(sysconfig.get_path("include"))')"
 OUTPUT="platform/macos/gtk3_accessibility/prototype/gtk3_ax_bridge.so"
 

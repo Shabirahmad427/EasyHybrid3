@@ -17,6 +17,24 @@ Windows never import it.
   path; it is not self-contained. Build it on the machine that runs
   EasyHybrid3 (it is a build artifact and is git-ignored).
 
+## Install from a clean checkout
+
+Verified procedure (fresh `git clone` of `55082af`, run from a different
+working directory; interpreter passed with `EASYHYBRID3_PYTHON`, which is the
+variable name the scripts use):
+
+    git clone <repo> EasyHybrid3 && cd EasyHybrid3
+    git submodule update --init                       # VISMOL graphics engine
+    PY=/path/to/python3.12
+    (cd src/graphics_engine && $PY setup.py build_ext --inplace)   # Cython
+    echo 'PDYNAMO_HOME = "/path/to/pDynamo3"' > paths.py          # or run install.py
+    EASYHYBRID3_PYTHON=$PY platform/macos/gtk3_accessibility/build.sh
+    $PY easyhybrid.py
+
+Without `paths.py` the app fails with `No module named 'pBabel'`; without the
+submodule or Cython build it fails earlier. pDynamo3 and the Python
+environment stay external.
+
 ## Build
 
     EASYHYBRID3_PYTHON=/path/to/python3.12 platform/macos/gtk3_accessibility/build.sh
@@ -72,3 +90,23 @@ and `EASYHYBRID3_TEST_HOOK` resolves to that exact file. Setting
 - Not a self-contained bundle: depends on Homebrew GTK3.
 - AX events arriving off the main thread are queued to the main queue; this
   path was not exercised under a real VoiceOver session.
+
+## Milestone 4.1 evidence (2026-10-16)
+
+- Clean clone: 14 Cython extensions built; bridge built arm64
+  (`Mach-O 64-bit bundle arm64`), linking only `/opt/homebrew/opt/*`
+  (gtk+3, glib, pango, cairo, harfbuzz, gdk-pixbuf, at-spi2-core/atk, gettext)
+  and system frameworks. App started from `/` and loaded
+  `examples/pkl/1UAO_OPLS.pkl` (Chignolin, 138 atoms).
+- Hard-coded `/Users/shabir/...` paths removed from the remaining helper
+  scripts; none remain under `platform/`.
+- **3D rendering NOT confirmed.** In window captures (`screencapture -l`) the
+  viewport shows only the axes triad, with the bridge enabled, with
+  `EASYHYBRID3_DISABLE_AX=1`, in a clean clone, and at the pre-accessibility
+  commit `dda360f` (no accessibility code). The user reports the molecule
+  appears while using the trackpad, then disappears and stays hidden. This
+  is independent of the accessibility work and sits in the macOS GLFW
+  offscreen-to-GTK display path (see `MACOS_NATIVE_RENDERING_FIX.md`); it is
+  an open issue, not a pass. Synthetic mouse/scroll events did not reproduce
+  the flash. OpenGL also logs `overflow encountered in cast` from
+  `vismol_glcore.py` (`_hashable`) at startup.
