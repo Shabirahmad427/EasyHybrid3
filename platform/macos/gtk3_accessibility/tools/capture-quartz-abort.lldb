@@ -1,0 +1,20 @@
+settings set target.process.stop-on-sharedlibrary-events false
+breakpoint set -n TransformProcessType
+breakpoint command add 1
+thread backtrace all
+register read x0 x1 x2 x3
+continue
+DONE
+breakpoint set -n _RegisterApplication
+breakpoint command add 2
+thread backtrace all
+register read x0 x1 x2 x3
+continue
+DONE
+breakpoint set -n abort
+breakpoint command add 3
+thread backtrace all
+register read
+DONE
+run
+process continue

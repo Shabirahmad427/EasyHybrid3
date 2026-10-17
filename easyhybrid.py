@@ -471,6 +471,24 @@ def main():
             except Exception:
                 traceback.print_exc()
 
+        # Native AX integration is optional and macOS-only. Defer it until
+        # EasyHybrid has completed GTK menu construction and presented the
+        # actual main window; GTK/Linux startup and the rendering path remain
+        # unchanged. Disable with EASYHYBRID3_DISABLE_AX=1.
+        if sys.platform == "darwin":
+            def _initialize_macos_accessibility():
+                try:
+                    macos_platform_path = os.path.join(EASYHYBRID_HOME, "platform", "macos")
+                    if macos_platform_path not in sys.path:
+                        sys.path.insert(0, macos_platform_path)
+                    from gtk3_accessibility.bootstrap import initialize
+                    initialize(main_window.window)
+                except Exception:
+                    logging.exception("Could not initialize macOS GTK3 accessibility")
+                return GLib.SOURCE_REMOVE
+
+            GLib.idle_add(_initialize_macos_accessibility)
+
         #Gtk.main()
         return 0
 
