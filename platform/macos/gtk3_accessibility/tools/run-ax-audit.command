@@ -15,11 +15,11 @@ fi
 TARGET_PID="${EASYHYBRID3_AX_PID:-$(/usr/bin/pgrep -n -f '[g]tk3_probe.py' || true)}"
 TARGET_LABEL="GTK-fixture"
 if [[ "${EASYHYBRID3_AX_TARGET:-}" == "production" ]]; then
-  TARGET_PID="$(/usr/bin/pgrep -n -f '[e]asyhybrid.py' || true)"
+  TARGET_PID="${EASYHYBRID3_AX_PID:-$(/usr/bin/pgrep -n -f '[e]asyhybrid.py' || true)}"
   TARGET_LABEL="EasyHybrid3-production"
 fi
 if [[ -z "$TARGET_PID" ]]; then
-  TARGET_PID="$(/usr/bin/pgrep -n -f '[e]asyhybrid.py' || true)"
+  TARGET_PID="${EASYHYBRID3_AX_PID:-$(/usr/bin/pgrep -n -f '[e]asyhybrid.py' || true)}"
   TARGET_LABEL="EasyHybrid3-production"
 fi
 printf 'AX target PID: %s (%s)\n' "${TARGET_PID:-not-found}" "$TARGET_LABEL"

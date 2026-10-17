@@ -399,3 +399,25 @@ An LLDB `thread backtrace all` snapshot of enabled PID 64834 showed the main thr
 - Scientific source and workflows: untouched in this milestone. Previously verified Chignolin rendering and scientific workflow evidence remains in Milestone 3.5.
 
 **Milestone 3.8 result: PASS for enabled/disabled dialog stability, normal shutdown in both modes, preserved AX edit/dialog behavior, and desktop-bridge interactions. Historical segmentation-fault cause remains unknown and documented as a residual risk.**
+
+## Milestone 4 release readiness (2026-10-16)
+
+See `docs/MACOS_ACCESSIBILITY.md` for install, diagnostics and limitations.
+
+Verified (Apple Silicon, Python 3.12 Homebrew venv, GTK 3.24 Quartz):
+- Native module builds arm64 via `build.sh`; links Homebrew GTK/ATK/GLib.
+- Review fixes: C++ new/delete mismatch in set-value request; nodes are
+  invalidated on widget destroy and `dealloc`; toplevel visibility handler
+  disconnected; main-thread guards on GTK access; no blocking waits.
+- Plain launch (no test variables): AX auto-initialized; 21 buttons, menus,
+  tabs, tables, combo boxes exposed; AXPress opened Go To Atom and Import New
+  System; AXValue set on an entry read back correctly.
+- Test hook inert with only `EASYHYBRID3_TEST_HOOK` set; requires
+  `EASYHYBRID3_RUNTIME_TESTS=1` and the exact hook path.
+- 20 File→Open + New System cycles and normal shutdown via
+  `on_delete_event`: PASS. SIGTERM exit on plain launch: clean.
+- Project load (`examples/pdb/1l2y.pdb`): process stable, AX tree present.
+- `pytest tests`: 23 passed, 4 skipped.
+
+Not verified: visual 3D rendering in this run (window was not frontmost),
+real VoiceOver session, bundled/relocatable install, Linux run.

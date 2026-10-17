@@ -5,13 +5,10 @@
 #include <atk/atk.h>
 #import <AppKit/AppKit.h>
 #import <objc/runtime.h>
+#import <dispatch/dispatch.h>
 #include <pthread.h>
 #include <cstdlib>
-#include <condition_variable>
-#include <chrono>
 #include <cstring>
-#include <mutex>
-#include <thread>
 
 extern "C" {
 NSWindow *gdk_quartz_window_get_nswindow(GdkWindow *window);
@@ -22,7 +19,6 @@ static char kChildrenKey;
 static const char *kNodeDataKey = "easyhybrid3-nsaccessibility-node";
 static NSMutableDictionary<NSString *, NSValue *> *originalChildrenImplementations;
 static GThread *gtkMainThread;
-static std::thread::id gtkMainStdThread;
 static bool AXDebugEnabled() {
   const char *value = std::getenv("EASYHYBRID3_AX_DEBUG");
   return value && std::strcmp(value, "1") == 0;
@@ -45,15 +41,7 @@ typedef struct {
 typedef struct {
   GtkWidget *widget;
   gchar *value;
-  std::shared_ptr<struct ValueCompletion> completion;
 } ValueRequest;
-struct ValueCompletion {
-  std::mutex mutex;
-  std::condition_variable condition;
-  bool complete = false;
-  bool applied = false;
-};
-
 @interface EH3AccessibilityNode : NSAccessibilityElement {
   GtkWidget *_widget;
   AtkObject *_accessible;
@@ -66,9 +54,13 @@ struct ValueCompletion {
   BOOL _enabled;
   BOOL _visible;
   BOOL _focused;
+  GObject *_visibilityOwner;
+  gulong _visibilityHandler;
 }
 - (instancetype)initWithWidget:(GtkWidget *)widget accessible:(AtkObject *)accessible parent:(NSView *)parent;
 - (void)refreshFromGtk;
+- (void)invalidate;
+- (void)observeVisibilityOf:(GtkWidget *)window;
 @end
 
 @implementation EH3AccessibilityNode
@@ -89,6 +81,7 @@ struct ValueCompletion {
     _visible = NO;
     return;
   }
+  NSString *previousValue = _value;
   AtkRole atkRole = atk_object_get_role(_accessible);
   const gchar *roleName = atk_role_get_name(atkRole);
   const gchar *name = atk_object_get_name(_accessible);
@@ -100,7 +93,7 @@ struct ValueCompletion {
   _enabled = gtk_widget_is_sensitive(_widget);
   _visible = gtk_widget_get_visible(_widget) && GTK_IS_WIDGET(toplevel) && gtk_widget_get_visible(toplevel);
   _focused = gtk_widget_has_focus(_widget);
-  if (GTK_IS_EDITABLE(_widget))
+  if (GTK_IS_ENTRY(_widget))
     _value = [NSString stringWithUTF8String:gtk_entry_get_text(GTK_ENTRY(_widget)) ?: ""];
   else if (GTK_IS_TOGGLE_BUTTON(_widget))
     _value = gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(_widget)) ? @"1" : @"0";
@@ -125,15 +118,43 @@ struct ValueCompletion {
   } else {
     _screenFrame = _parentView.window.frame;
   }
-  NSAccessibilityPostNotification(self, NSAccessibilityValueChangedNotification);
+  if (![_value isEqual:previousValue] && (_value || previousValue))
+    NSAccessibilityPostNotification(self, NSAccessibilityValueChangedNotification);
+}
+
+- (void)observeVisibilityOf:(GtkWidget *)window {
+  _visibilityOwner = G_OBJECT(window);
+  g_object_add_weak_pointer(_visibilityOwner, (gpointer *)&_visibilityOwner);
+  _visibilityHandler = g_signal_connect(window, "notify::visible",
+      G_CALLBACK(+[](GObject *, GParamSpec *, gpointer data) { [(__bridge EH3AccessibilityNode *)data refreshFromGtk]; }),
+      (__bridge gpointer)self);
+}
+
+- (void)invalidate {
+  // GtkWidget::destroy precedes GObject finalization. Retained AX clients must
+  // become inert immediately, even if another owner keeps the widget alive.
+  if (_visibilityOwner) {
+    if (_visibilityHandler) g_signal_handler_disconnect(_visibilityOwner, _visibilityHandler);
+    g_object_remove_weak_pointer(_visibilityOwner, (gpointer *)&_visibilityOwner);
+    _visibilityOwner = NULL;
+  }
+  _visibilityHandler = 0;
+  if (_widget) {
+    g_object_remove_weak_pointer(G_OBJECT(_widget), (gpointer *)&_widget);
+    _widget = NULL;
+  }
+  _enabled = NO;
+  _visible = NO;
+  _focused = NO;
 }
 
 - (void)dealloc {
-  if (_widget) g_object_remove_weak_pointer(G_OBJECT(_widget), (gpointer *)&_widget);
+  [self invalidate];
   if (_accessible) g_object_unref(_accessible);
 }
 
 - (NSString *)accessibilityRole {
+  if (!pthread_main_np()) return NSAccessibilityUnknownRole;
   if (GTK_IS_TOOL_BUTTON(_widget) || GTK_IS_TOOL_ITEM(_widget)) return NSAccessibilityButtonRole;
   if (GTK_IS_RADIO_BUTTON(_widget)) return NSAccessibilityRadioButtonRole;
   if (GTK_IS_BUTTON(_widget) && GTK_IS_TOGGLE_BUTTON(_widget)) return NSAccessibilityCheckBoxRole;
@@ -149,40 +170,44 @@ struct ValueCompletion {
   if (GTK_IS_WINDOW(_widget)) return NSAccessibilityWindowRole;
   return NSAccessibilityGroupRole;
 }
-- (NSString *)accessibilityTitle { return _label; }
-- (NSString *)accessibilityLabel { return _label; }
-- (NSString *)accessibilityHelp { return _help; }
+- (NSString *)accessibilityTitle { return pthread_main_np() ? _label : nil; }
+- (NSString *)accessibilityLabel { return pthread_main_np() ? _label : nil; }
+- (NSString *)accessibilityHelp { return pthread_main_np() ? _help : nil; }
 - (NSString *)accessibilityValue {
+  if (!pthread_main_np()) return nil;
   if (_widget && GTK_IS_ENTRY(_widget)) {
     const gchar *liveValue = gtk_entry_get_text(GTK_ENTRY(_widget));
     _value = [NSString stringWithUTF8String:liveValue ?: ""];
   }
   return _value;
 }
-- (NSRect)accessibilityFrame { return _screenFrame; }
-- (id)accessibilityParent { return _parentView; }
+- (NSRect)accessibilityFrame { return pthread_main_np() ? _screenFrame : NSZeroRect; }
+- (id)accessibilityParent { return pthread_main_np() ? _parentView : nil; }
 - (BOOL)isAccessibilityElement { return YES; }
-- (BOOL)isAccessibilityEnabled { return _enabled && _visible && _widget != NULL; }
-- (BOOL)isAccessibilityHidden { return !_visible; }
-- (BOOL)isAccessibilityFocused { return _focused; }
+- (BOOL)isAccessibilityEnabled { return pthread_main_np() && _enabled && _visible && _widget != NULL; }
+- (BOOL)isAccessibilityHidden { return !pthread_main_np() || !_visible; }
+- (BOOL)isAccessibilityFocused { return pthread_main_np() && _focused; }
 - (void)applyAccessibilityTextValue:(id)value {
+  if (!pthread_main_np()) {
+    id requested = [value copy];
+    dispatch_async(dispatch_get_main_queue(), ^{ [self applyAccessibilityTextValue:requested]; });
+    return;
+  }
   NSString *requested = [value isKindOfClass:[NSString class]] ? (NSString *)value : nil;
   AXTrace("set-value-enter", _widget, requested.UTF8String);
   if (!_widget || !requested || !GTK_IS_ENTRY(_widget) || !ATK_IS_EDITABLE_TEXT(_accessible)) {
     AXTrace("set-value-rejected", _widget, requested.UTF8String);
     return;
   }
-  ValueRequest *request = g_new0(ValueRequest, 1);
-  new (request) ValueRequest();
+  ValueRequest *request = new ValueRequest();
   request->widget = _widget;
-  request->completion = std::make_shared<ValueCompletion>();
   g_object_add_weak_pointer(G_OBJECT(request->widget), (gpointer *)&request->widget);
   request->value = g_strdup(requested.UTF8String);
   AXTrace("set-value-queued", _widget, request->value);
   auto updateValue = [](gpointer data) -> gboolean {
     ValueRequest *change = static_cast<ValueRequest *>(data);
     AXTrace("set-value-main-context-enter", change->widget, change->value);
-    if (change->widget && GTK_IS_ENTRY(change->widget)) {
+    if (change->widget && GTK_IS_ENTRY(change->widget) && gtk_widget_get_realized(change->widget)) {
       AtkObject *accessible = gtk_widget_get_accessible(change->widget);
       if (ATK_IS_EDITABLE_TEXT(accessible)) {
         AXTrace("atk-set-text-contents-enter", change->widget, change->value);
@@ -198,18 +223,12 @@ struct ValueCompletion {
         }
         AXTrace("set-value-main-context-exit", change->widget,
                 gtk_entry_get_text(GTK_ENTRY(change->widget)));
-        change->completion->applied = g_strcmp0(gtk_entry_get_text(GTK_ENTRY(change->widget)), change->value) == 0;
       } else {
         AXTrace("set-value-no-atk-editable-text", change->widget, change->value);
       }
     } else {
       AXTrace("set-value-widget-gone", change->widget, change->value);
     }
-    {
-      std::lock_guard<std::mutex> lock(change->completion->mutex);
-      change->completion->complete = true;
-    }
-    change->completion->condition.notify_one();
     return G_SOURCE_REMOVE;
   };
   auto releaseRequest = [](gpointer data) {
@@ -218,26 +237,11 @@ struct ValueCompletion {
     g_free(change->value);
     delete change;
   };
-  if (std::this_thread::get_id() == gtkMainStdThread) {
-    updateValue(request);
-    if (request->widget) g_object_remove_weak_pointer(G_OBJECT(request->widget), (gpointer *)&request->widget);
-    g_free(request->value);
-    delete request;
-  } else {
-    // An idle source runs when GTK iterates its default context. Unlike
-    // g_main_context_invoke_full(), it cannot opportunistically run on the
-    // accessibility caller's thread when that thread acquires the context.
-    auto completion = request->completion;
-    g_idle_add_full(G_PRIORITY_DEFAULT, updateValue, request, releaseRequest);
-    std::unique_lock<std::mutex> lock(completion->mutex);
-    bool completed = completion->condition.wait_for(lock, std::chrono::seconds(5), [completion] { return completion->complete; });
-    bool applied = completed && completion->applied;
-    lock.unlock();
-    AXTrace(completed ? (applied ? "set-value-complete" : "set-value-not-applied") : "set-value-timeout",
-            _widget, requested.UTF8String);
-  }
+  updateValue(request);
+  releaseRequest(request);
 }
 - (BOOL)accessibilityIsAttributeSettable:(NSString *)attribute {
+  if (!pthread_main_np()) return NO;
   BOOL settable = _widget && GTK_IS_ENTRY(_widget) &&
                   [attribute isEqualToString:NSAccessibilityValueAttribute] &&
                   ATK_IS_EDITABLE_TEXT(_accessible);
@@ -245,6 +249,7 @@ struct ValueCompletion {
   return settable;
 }
 - (BOOL)isAccessibilityAttributeSettable:(NSString *)attribute {
+  if (!pthread_main_np()) return NO;
   BOOL settable = _widget && GTK_IS_ENTRY(_widget) &&
                   [attribute isEqualToString:NSAccessibilityValueAttribute] &&
                   ATK_IS_EDITABLE_TEXT(_accessible);
@@ -262,6 +267,7 @@ struct ValueCompletion {
   [self applyAccessibilityTextValue:value];
 }
 - (NSArray<NSString *> *)accessibilityActionNames {
+  if (!pthread_main_np()) return @[];
   if (GTK_IS_BUTTON(_widget) || GTK_IS_TOOL_BUTTON(_widget) || GTK_IS_MENU_ITEM(_widget) || GTK_IS_TOGGLE_BUTTON(_widget))
     return @[ NSAccessibilityPressAction ];
   if (GTK_IS_NOTEBOOK(_widget)) return @[ NSAccessibilityShowMenuAction ];
@@ -271,6 +277,10 @@ struct ValueCompletion {
   return [action isEqualToString:NSAccessibilityPressAction] ? @"Press" : @"";
 }
 - (BOOL)accessibilityPerformPress {
+  if (!pthread_main_np()) {
+    dispatch_async(dispatch_get_main_queue(), ^{ [self accessibilityPerformPress]; });
+    return YES;
+  }
   if (!_widget || !_enabled || !_visible || !ATK_IS_ACTION(_accessible)) return NO;
   PressRequest *request = g_new0(PressRequest, 1);
   request->widget = _widget;
@@ -278,7 +288,7 @@ struct ValueCompletion {
   request->accessible = g_object_ref(_accessible);
   g_idle_add_full(G_PRIORITY_DEFAULT, [](gpointer data) -> gboolean {
     PressRequest *press = static_cast<PressRequest *>(data);
-    if (press->widget && GTK_IS_WIDGET(press->widget) && ATK_IS_ACTION(press->accessible))
+    if (press->widget && GTK_IS_WIDGET(press->widget) && gtk_widget_get_realized(press->widget) && ATK_IS_ACTION(press->accessible))
       atk_action_do_action(ATK_ACTION(press->accessible), 0);
     return G_SOURCE_REMOVE;
   }, request, [](gpointer data) {
@@ -316,6 +326,7 @@ static void WidgetDestroyed(GtkWidget *widget, gpointer data) {
   EH3AccessibilityNode *node = (__bridge EH3AccessibilityNode *)data;
   NSView *view = node.accessibilityParent;
   NSMutableArray *children = objc_getAssociatedObject(view, &kChildrenKey);
+  [node invalidate];
   [children removeObjectIdenticalTo:node];
   g_object_set_data(G_OBJECT(widget), kNodeDataKey, NULL);
   NSAccessibilityPostNotification(view, NSAccessibilityLayoutChangedNotification);
@@ -337,6 +348,8 @@ static BOOL InstallChildrenHook(NSView *view) {
 
 static PyObject *bridge_register_widget(PyObject *self, PyObject *arg) {
   (void)self;
+  if (!pthread_main_np()) { PyErr_SetString(PyExc_RuntimeError, "register_widget requires the GTK main thread"); return NULL; }
+  if (!PyObject_TypeCheck(arg, &PyGObject_Type)) { PyErr_SetString(PyExc_TypeError, "expected GObject"); return NULL; }
   GObject *object = pygobject_get(arg);
   if (!object || !GTK_IS_WIDGET(object)) { PyErr_SetString(PyExc_TypeError, "expected Gtk.Widget"); return NULL; }
   GtkWidget *widget = GTK_WIDGET(object);
@@ -367,7 +380,7 @@ static PyObject *bridge_register_widget(PyObject *self, PyObject *arg) {
     g_signal_connect_data(widget, "notify", G_CALLBACK(RefreshNode), (gpointer)CFBridgingRetain(node), ReleaseNode, G_CONNECT_DEFAULT);
     if (GTK_IS_ENTRY(widget))
       g_signal_connect_data(widget, "changed", G_CALLBACK(EntryChanged), (gpointer)CFBridgingRetain(node), ReleaseNode, G_CONNECT_DEFAULT);
-    g_signal_connect_data(toplevel, "notify::visible", G_CALLBACK(RefreshNode), (gpointer)CFBridgingRetain(node), ReleaseNode, G_CONNECT_DEFAULT);
+    [node observeVisibilityOf:toplevel];
     g_signal_connect_data(widget, "destroy", G_CALLBACK(WidgetDestroyed), (gpointer)CFBridgingRetain(node), ReleaseNode, G_CONNECT_DEFAULT);
     NSAccessibilityPostNotification(nativeView, NSAccessibilityLayoutChangedNotification);
     // GtkWidget and GdkWindow are GObjects, not Objective-C objects. Passing
@@ -383,8 +396,8 @@ static PyObject *bridge_register_widget(PyObject *self, PyObject *arg) {
 
 static PyObject *bridge_finish_launching(PyObject *self, PyObject *Py_UNUSED(ignored)) {
   (void)self;
+  if (!pthread_main_np()) { PyErr_SetString(PyExc_RuntimeError, "finish_launching requires the GTK main thread"); return NULL; }
   gtkMainThread = g_thread_self();
-  gtkMainStdThread = std::this_thread::get_id();
   AXTrace("finish-launching", NULL, NULL);
   @autoreleasepool { [NSApp finishLaunching]; }
   Py_RETURN_NONE;

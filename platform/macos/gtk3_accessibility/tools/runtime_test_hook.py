@@ -10,6 +10,8 @@ import traceback
 
 
 def run(main_window, Gtk, GLib):
+    if os.environ.get("EASYHYBRID3_RUNTIME_TESTS") != "1":
+        raise RuntimeError("Runtime tests require explicit launcher opt-in")
     mode = os.environ.get("EASYHYBRID3_TEST_HOOK_MODE", "dialogs")
     cycles = int(os.environ.get("EASYHYBRID3_TEST_HOOK_CYCLES", "20"))
     output = os.environ.get("EASYHYBRID3_TEST_HOOK_LOG", "/private/tmp/easyhybrid3-gtk-test-hook.log")
@@ -28,7 +30,8 @@ def run(main_window, Gtk, GLib):
             log("NORMAL_CLOSE callback-returned=yes")
         except Exception:
             log("NORMAL_CLOSE exception=" + traceback.format_exc().replace("\n", " | "))
-            Gtk.main_quit()
+            # Leave the app available for diagnostics; never turn a failed
+            # close callback into an apparently successful shutdown.
         return GLib.SOURCE_REMOVE
 
     if mode == "shutdown":

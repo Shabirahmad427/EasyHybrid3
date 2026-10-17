@@ -118,3 +118,6 @@ untitled.easy~
 
 
 src/gui/windows/builder/solvents/.cache/
+
+# macOS GTK3 accessibility bridge build artifacts
+platform/macos/gtk3_accessibility/*.so

@@ -479,7 +479,12 @@ def main():
             # Test-only GTK driver: it is inert unless an explicit test hook
             # path is supplied by the existing runtime launcher.
             test_hook_path = os.environ.get("EASYHYBRID3_TEST_HOOK")
-            if test_hook_path:
+            expected_test_hook = os.path.join(
+                EASYHYBRID_HOME, "platform", "macos", "gtk3_accessibility",
+                "tools", "runtime_test_hook.py")
+            if (os.environ.get("EASYHYBRID3_RUNTIME_TESTS") == "1"
+                    and test_hook_path
+                    and os.path.realpath(test_hook_path) == os.path.realpath(expected_test_hook)):
                 def _run_macos_test_hook():
                     try:
                         import importlib.util

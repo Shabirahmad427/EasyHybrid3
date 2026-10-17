@@ -1,8 +1,8 @@
 #!/bin/zsh
 set -u
 
-ROOT="/Users/shabir/software/EasyHybrid3"
-PYTHON="/Users/shabir/software/chem312/bin/python"
+ROOT="$(cd "$(dirname "$0")/../../../.." && pwd)"
+PYTHON="${EASYHYBRID3_PYTHON:-python3.12}"
 RUN_DIR="/private/tmp/easyhybrid3-m33-$(/bin/date +%Y%m%d-%H%M%S)"
 mkdir -p "$RUN_DIR"
 cd "$ROOT" || exit 2
@@ -21,6 +21,7 @@ print "PYTHONPATH=${PYTHONPATH:-<unset>}"
 # EASYHYBRID3_TEST_HOOK names a module file.
 TEST_HOOK="${EASYHYBRID3_TEST_HOOK:-}"
 if [[ -n "$TEST_HOOK" ]]; then
+  export EASYHYBRID3_RUNTIME_TESTS=1
   export EASYHYBRID3_TEST_HOOK="$TEST_HOOK"
   print "TEST_HOOK=$TEST_HOOK"
 fi
@@ -107,3 +108,10 @@ fi
 print "Final process state:"
 /bin/ps -p "$APP_PID" -o pid=,stat=,command= || true
 print "RESULT_DIR=$RUN_DIR"
+if [[ -n "$TEST_HOOK" ]]; then
+  /bin/cat "$EASYHYBRID3_TEST_HOOK_LOG"
+  if [[ ! -s "$EASYHYBRID3_TEST_HOOK_LOG" ]] || /usr/bin/grep -q 'exception=\|DIALOG_TEST_RESULT=FAIL' "$EASYHYBRID3_TEST_HOOK_LOG"; then
+    exit 12
+  fi
+fi
+exit "$APP_STATUS"
