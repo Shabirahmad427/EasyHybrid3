@@ -177,6 +177,7 @@ class ImportANewSystemWindow(Gtk.Window):
                 ['DYFF', 5],
                 ["pdynamo files (*.pkl, *.yaml)", 3],
                 ["other (*.pdb, *.xyz, *.mol2)", 4],
+                ["pDynamo2 exchange (*.json)", 6],
             ]
             for system_type in system_types:
                 self.system_type_store.append(system_type)
@@ -364,7 +365,7 @@ class ImportANewSystemWindow(Gtk.Window):
             self.system_types_combo.set_tooltip_text(self.DYFF_txt)
                 
     def filetype_parser(self, filein, systemtype):
-        filetype = get_file_type(filein)
+        filetype = get_file_type(filein).lower()
         #print (filetype, systemtype)
         if filetype in ['top', 'prmtop', 'TOP', 'PRMTOP', ]:
             if systemtype == 0:
@@ -399,6 +400,11 @@ class ImportANewSystemWindow(Gtk.Window):
         
         
         
+        elif filetype == 'json':
+            # Exchange JSON is self-identifying by file type. Record it even
+            # if GTK did not update the system-type combo before this click.
+            self.files['coordinates'] = filein
+            return 'pDynamo exchange manifest'
         elif filetype in ['pkl', 'PKL']:
             #if systemtype == 1:
             self.files['coordinates'] = filein
@@ -464,6 +470,17 @@ class ImportANewSystemWindow(Gtk.Window):
             #print(model[active_iter][1]) # access the value of the active item
             systemtype = model[active_iter][1]
         else:
+            return None
+        coordinates_path = self.files.get('coordinates')
+        if coordinates_path and str(coordinates_path).lower().endswith('.json'):
+            systemtype = 6
+        if systemtype == 6 and not coordinates_path:
+            message = 'Choose GH39_exchange.json with Load Files before importing the exchange system.'
+            self.easyhybrid_main.bottom_notebook.status_teeview_add_new_item(
+                message=message, system=None)
+            simpledialog = SimpleDialog(self.easyhybrid_main)
+            simpledialog.error_details(parent=self.window, msg=message, details='',
+                                       title='Import System')
             return None
         self.files['prm_folder'] =  self.builder.get_object('OPLS_folderchooserbutton').get_filename()
         #name =  self.builder.get_object('entry_system_name').get_text()

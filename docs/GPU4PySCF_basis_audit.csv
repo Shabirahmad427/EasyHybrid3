@@ -1,0 +1,366 @@
+name,catalog_kind,elements_loaded,elements_missing,max_l,nao_hco,gpu_orbital_limit,status,detail
+321++g,orbital candidate,H;C;O;Fe;Mo,Au(BasisNotFoundError),2,H:3;C:13;O:13,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+321++g*,orbital candidate,H;C;O;Fe;Mo,Au(BasisNotFoundError),2,H:3;C:13;O:13,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+321++gs,orbital candidate,H;C;O;Fe;Mo,Au(BasisNotFoundError),2,H:3;C:13;O:13,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+321g,orbital candidate,H;C;O;Fe;Mo,Au(BasisNotFoundError),2,H:2;C:9;O:9,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+321g*,orbital candidate,H;C;O;Fe;Mo,Au(BasisNotFoundError),2,H:2;C:9;O:9,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+321gs,orbital candidate,H;C;O;Fe;Mo,Au(BasisNotFoundError),2,H:2;C:9;O:9,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+431g,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),1,H:2;C:9;O:9,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+631++g,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:3;C:13;O:13,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+631++g*,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:3;C:18;O:18,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+631++g**,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),3,H:6;C:18;O:18,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+631++gs,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:3;C:18;O:18,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+631++gss,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),3,H:6;C:18;O:18,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+631+g,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),1,H:2;C:13;O:13,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+631+g*,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:2;C:18;O:18,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+631+g**,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:5;C:18;O:18,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+631+gs,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:2;C:18;O:18,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+631+gss,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:5;C:18;O:18,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+6311++g,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),1,H:4;C:17;O:17,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+6311++g*,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:4;C:22;O:22,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+6311++g**,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:7;C:22;O:22,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+6311++gs,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:4;C:22;O:22,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+6311++gss,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:7;C:22;O:22,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+6311+g,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),1,H:3;C:17;O:17,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+6311+g*,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:3;C:22;O:22,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+6311+g**,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:6;C:22;O:22,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+6311+gs,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:3;C:22;O:22,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+6311+gss,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:6;C:22;O:22,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+6311g,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),1,H:3;C:13;O:13,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+6311g*,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:3;C:18;O:18,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+6311g**,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:6;C:18;O:18,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+6311gs,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:3;C:18;O:18,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+6311gss,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:6;C:18;O:18,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+631g,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:2;C:9;O:9,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+631g*,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),3,H:2;C:14;O:14,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+631g**,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),3,H:5;C:14;O:14,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+631gs,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),3,H:2;C:14;O:14,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+631gss,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),3,H:5;C:14;O:14,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+adzp,orbital candidate,H;C;O;Fe;Mo;Au,,3,H:9;C:24;O:24,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ahlrichs,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+ahlrichscfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+ano,orbital candidate,H;C;O;Fe;Mo;Au,,5,H:40;C:91;O:88,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+anorcc,orbital candidate,H;C;O;Fe;Mo;Au,,5,H:40;C:91;O:88,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+anoroosdz,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),3,H:9;C:23;O:23,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+anoroostz,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),4,H:23;C:46;O:46,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+aqzp,orbital candidate,H;C;O;Fe;Mo,Au(BasisNotFoundError),5,H:46;C:81;O:81,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+atzp,orbital candidate,H;C;O;Fe;Mo,Au(BasisNotFoundError),4,H:23;C:47;O:47,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+augccpv5z,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),6,H:80;C:127;O:127,4,above_gpu_orbital_limit,"Contains angular momentum l=6, above g (l=4)"
+augccpv5zdk,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),6,H:80;C:127;O:127,4,above_gpu_orbital_limit,"Contains angular momentum l=6, above g (l=4)"
+augccpv5zdkh,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),6,H:80;C:127;O:127,4,above_gpu_orbital_limit,"Contains angular momentum l=6, above g (l=4)"
+augccpv5zjkfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+augccpv5zmp2fit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+augccpv5zoptri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+augccpv5zpp,orbital candidate,Au,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError),6,,4,above_gpu_orbital_limit,"Contains angular momentum l=6, above g (l=4)"
+augccpv5zri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+augccpvdpdz,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),3,H:9;C:23;O:23,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+augccpvdz,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),3,H:9;C:23;O:23,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+augccpvdzdk,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),3,H:9;C:23;O:23,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+augccpvdzdkh,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),3,H:9;C:23;O:23,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+augccpvdzjkfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+augccpvdzoptri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+augccpvdzpjkfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+augccpvdzpp,orbital candidate,Au,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError),3,,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+augccpvdzpri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+augccpvdzri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+augccpvqz,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),5,H:46;C:80;O:80,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+augccpvqzdk,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),5,H:46;C:80;O:80,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+augccpvqzdk3,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+augccpvqzdkh,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),5,H:46;C:80;O:80,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+augccpvqzjkfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+augccpvqzmp2fit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+augccpvqzoptri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+augccpvqzpp,orbital candidate,Au,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError),5,,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+augccpvqzri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+augccpvtz,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),4,H:23;C:46;O:46,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+augccpvtzdk,orbital candidate,H;C;O;Fe;Mo,Au(BasisNotFoundError),4,H:23;C:46;O:46,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+augccpvtzdk3,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+augccpvtzdkh,orbital candidate,H;C;O;Fe;Mo,Au(BasisNotFoundError),4,H:23;C:46;O:46,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+augccpvtzjkfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+augccpvtzoptri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+augccpvtzpp,orbital candidate,Au,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError),4,,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+augccpvtzri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+augccpwcv5z,orbital candidate,C;O;Fe,H(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),6,C:181;O:181,4,above_gpu_orbital_limit,"Contains angular momentum l=6, above g (l=4)"
+augccpwcv5zdk,orbital candidate,Fe,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),6,,4,above_gpu_orbital_limit,"Contains angular momentum l=6, above g (l=4)"
+augccpwcvdz,orbital candidate,C;O,H(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,C:27;O:27,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+augccpwcvqz,orbital candidate,C;O;Fe,H(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),5,C:109;O:109,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+augccpwcvqzdk,orbital candidate,Fe,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),5,,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+augccpwcvqzdk3,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+augccpwcvtz,orbital candidate,C;O;Fe,H(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),4,C:59;O:59,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+augccpwcvtzdk,orbital candidate,Fe;Mo,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Au(BasisNotFoundError),4,,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+augccpwcvtzdk3,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+augccpwcvtzmp2fit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+augpc0,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),1,H:3;C:13;O:13,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+augpc1,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),3,H:9;C:23;O:23,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+augpc2,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),4,H:23;C:46;O:46,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+augpc3,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),5,H:50;C:89;O:89,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+augpc4,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),6,H:88;C:145;O:145,4,above_gpu_orbital_limit,"Contains angular momentum l=6, above g (l=4)"
+augpcseg0,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:3;C:13;O:13,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+augpcseg1,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),3,H:9;C:23;O:23,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+augpcseg2,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),4,H:23;C:46;O:46,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+augpcseg3,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),5,H:49;C:85;O:85,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+augpcseg4,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),6,H:86;C:137;O:137,4,above_gpu_orbital_limit,"Contains angular momentum l=6, above g (l=4)"
+bfd,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+bfdpp,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+bfdv5z,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),5,H:55;C:90;O:90,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+bfdvdz,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:5;C:13;O:13,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+bfdvqz,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),5,H:30;C:54;O:54,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+bfdvtz,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),4,H:13;C:29;O:29,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccecp,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecp28,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecp28augccpv5z,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecp28augccpv6z,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecp28augccpvdz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecp28augccpvqz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecp28augccpvtz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecp28ccpv5z,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecp28ccpv6z,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecp28ccpvdz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecp28ccpvqz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecp28ccpvtz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecp36,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecp36augccpv5z,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecp36augccpv6z,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecp36augccpvdz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecp36augccpvqz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecp36augccpvtz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecp36ccpv5z,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecp36ccpv6z,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecp36ccpvdz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecp36ccpvqz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecp36ccpvtz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecpaugccpv5z,orbital candidate,H;C;O;Fe;Mo;Au,,6,H:80;C:126;O:126,4,above_gpu_orbital_limit,"Contains angular momentum l=6, above g (l=4)"
+ccecpaugccpv6z,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),6,H:127;C:188;O:188,4,above_gpu_orbital_limit,"Contains angular momentum l=6, above g (l=4)"
+ccecpaugccpvdz,orbital candidate,H;C;O;Fe;Mo;Au,,3,H:9;C:22;O:22,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccecpaugccpvqz,orbital candidate,H;C;O;Fe;Mo;Au,,5,H:46;C:79;O:79,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+ccecpaugccpvtz,orbital candidate,H;C;O;Fe;Mo;Au,,4,H:23;C:45;O:45,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccecpccpv5z,orbital candidate,H;C;O;Fe;Mo;Au,,6,H:55;C:90;O:90,4,above_gpu_orbital_limit,"Contains angular momentum l=6, above g (l=4)"
+ccecpccpv6z,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),6,H:91;C:139;O:139,4,above_gpu_orbital_limit,"Contains angular momentum l=6, above g (l=4)"
+ccecpccpvdz,orbital candidate,H;C;O;Fe;Mo;Au,,3,H:5;C:13;O:13,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccecpccpvqz,orbital candidate,H;C;O;Fe;Mo;Au,,5,H:30;C:54;O:54,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+ccecpccpvtz,orbital candidate,H;C;O;Fe;Mo;Au,,4,H:14;C:29;O:29,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccecphe,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecpheaugccpv5z,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecpheaugccpv6z,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecpheaugccpvdz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecpheaugccpvqz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecpheaugccpvtz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecpheccpv5z,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecpheccpv6z,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecpheccpvdz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecpheccpvqz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecpheccpvtz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecpreg,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecpregaugccpv5z,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecpregaugccpvdz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecpregaugccpvqz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecpregaugccpvtz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecpregccpv5z,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecpregccpvdz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecpregccpvqz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccecpregccpvtz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccpcv5z,orbital candidate,C;O,H(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),5,C:145;O:145,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+ccpcv6z,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccpcvdz,orbital candidate,C;O,H(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,C:18;O:18,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccpcvdzf12optri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+ccpcvqz,orbital candidate,C;O,H(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),4,C:84;O:84,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccpcvqzf12optri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+ccpcvtz,orbital candidate,C;O,H(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),3,C:43;O:43,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccpcvtzf12optri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+ccpv5z,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),6,H:55;C:91;O:91,4,above_gpu_orbital_limit,"Contains angular momentum l=6, above g (l=4)"
+ccpv5zdk,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),6,H:55;C:91;O:91,4,above_gpu_orbital_limit,"Contains angular momentum l=6, above g (l=4)"
+ccpv5zdkh,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),6,H:55;C:91;O:91,4,above_gpu_orbital_limit,"Contains angular momentum l=6, above g (l=4)"
+ccpv5zf12,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),5,H:59;C:134;O:134,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+ccpv5zf12rev2,orbital candidate,H,C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),4,H:80,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccpv5zjkfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+ccpv5zmp2fit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+ccpv5zpp,orbital candidate,Mo;Au,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError),6,,4,above_gpu_orbital_limit,"Contains angular momentum l=6, above g (l=4)"
+ccpv5zri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+ccpvdpdz,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),3,H:5;C:14;O:14,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccpvdz,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),3,H:5;C:14;O:14,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccpvdzdk,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),3,H:5;C:14;O:14,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccpvdzdkh,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),3,H:5;C:14;O:14,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccpvdzf12nz,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:9;C:30;O:30,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccpvdzf12optri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+ccpvdzf12rev2,orbital candidate,H,C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),1,H:9,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccpvdzfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+ccpvdzjkfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+ccpvdzpp,orbital candidate,Mo;Au,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError),3,,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccpvdzppnr,orbital candidate,Au,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError),3,,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccpvdzri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+ccpvqz,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),5,H:30;C:55;O:55,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+ccpvqzdk,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),5,H:30;C:55;O:55,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+ccpvqzdk3,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccpvqzdkh,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),5,H:30;C:55;O:55,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+ccpvqzf12nz,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),4,H:34;C:87;O:87,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccpvqzf12optri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+ccpvqzf12rev2,orbital candidate,H,C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),3,H:46,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccpvqzjkfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+ccpvqzmp2fit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+ccpvqzpp,orbital candidate,Mo;Au,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError),5,,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+ccpvqzri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+ccpvtz,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),4,H:14;C:30;O:30,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccpvtzdk,orbital candidate,H;C;O;Fe;Mo;Au,,4,H:14;C:30;O:30,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccpvtzdk3,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccpvtzdkh,orbital candidate,H;C;O;Fe;Mo;Au,,4,H:14;C:30;O:30,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccpvtzf12nz,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),3,H:18;C:53;O:53,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccpvtzf12optri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+ccpvtzf12rev2,orbital candidate,H,C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:23,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccpvtzfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+ccpvtzjkfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+ccpvtzpp,orbital candidate,Mo;Au,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError),4,,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccpvtzppnr,orbital candidate,Au,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError),4,,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccpvtzri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+ccpwcv5z,orbital candidate,C;O;Fe,H(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),6,C:145;O:145,4,above_gpu_orbital_limit,"Contains angular momentum l=6, above g (l=4)"
+ccpwcv5zdk,orbital candidate,Fe,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),6,,4,above_gpu_orbital_limit,"Contains angular momentum l=6, above g (l=4)"
+ccpwcv5zpp,orbital candidate,Au,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError),6,,4,above_gpu_orbital_limit,"Contains angular momentum l=6, above g (l=4)"
+ccpwcvdz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccpwcvdzdk,orbital candidate,Fe,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),3,,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccpwcvdzpp,orbital candidate,Au,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError),3,,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccpwcvqz,orbital candidate,Fe,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),5,,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+ccpwcvqzdk,orbital candidate,Fe,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),5,,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+ccpwcvqzdk3,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccpwcvqzpp,orbital candidate,Au,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError),5,,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+ccpwcvtz,orbital candidate,Fe;Au,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Mo(BasisNotFoundError),4,,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccpwcvtzdk,orbital candidate,Fe;Au,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Mo(BasisNotFoundError),4,,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ccpwcvtzdk3,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ccpwcvtzmp2fit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+ccpwcvtzpp,orbital candidate,Au,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError),4,,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+crenbl,orbital candidate,H;C;O;Fe;Mo;Au,,2,H:4;C:16;O:16,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+crenbs,orbital candidate,Fe;Mo;Au,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError),2,,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+crystalccpvdz,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:5;C:14;O:14,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+def2mtzvp,orbital candidate,H;C;O;Fe;Mo;Au,,2,H:3;C:19;O:24,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+def2mtzvpp,orbital candidate,H;C;O;Fe;Mo;Au,,2,H:5;C:19;O:24,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+def2qzvp,orbital candidate,H;C;O;Fe;Mo;Au,,4,H:30;C:57;O:57,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+def2qzvpd,orbital candidate,H;C;O;Fe;Mo;Au,,4,H:33;C:63;O:66,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+def2qzvpjfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+def2qzvpjkfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+def2qzvpp,orbital candidate,H;C;O;Fe;Mo;Au,,4,H:30;C:57;O:57,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+def2qzvppd,orbital candidate,H;C;O;Fe;Mo;Au,,4,H:33;C:63;O:66,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+def2qzvppdri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+def2qzvppjfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+def2qzvppjkfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+def2qzvppri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+def2qzvpri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+def2svp,orbital candidate,H;C;O;Fe;Mo;Au,,3,H:5;C:14;O:14,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+def2svpd,orbital candidate,H;C;O;Fe;Mo;Au,,3,H:8;C:20;O:23,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+def2svpdri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+def2svpjfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+def2svpjkfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+def2svpri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+def2tzvp,orbital candidate,H;C;O;Fe;Mo;Au,,3,H:6;C:31;O:31,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+def2tzvpd,orbital candidate,H;C;O;Fe;Mo;Au,,3,H:9;C:37;O:40,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+def2tzvpdri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+def2tzvpjfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+def2tzvpjkfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+def2tzvpp,orbital candidate,H;C;O;Fe;Mo;Au,,4,H:14;C:31;O:31,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+def2tzvppd,orbital candidate,H;C;O;Fe;Mo;Au,,4,H:17;C:37;O:40,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+def2tzvppdri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+def2tzvppjfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+def2tzvppjkfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+def2tzvppri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+def2tzvpri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+def2universaljfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+def2universaljkfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+demon,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+demoncfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+dgaussa1cfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+dgaussa1xfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+dgaussa2cfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+dgaussa2xfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+dyall2zp,orbital candidate,H;C;O;Fe;Mo;Au,,3,H:9;C:33;O:33,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+dyall3zp,orbital candidate,H;C;O;Fe;Mo;Au,,3,H:15;C:48;O:48,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+dyall4zp,orbital candidate,H;C;O;Fe;Mo;Au,,3,H:20;C:63;O:63,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+dyallaae2z,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:13;C:42;O:42,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+dyallaae3z,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),3,H:29;C:76;O:76,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+dyallaae4z,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),4,H:53;C:128;O:128,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+dyallacv2z,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:13;C:42;O:42,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+dyallacv3z,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),3,H:29;C:76;O:76,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+dyallacv4z,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),4,H:53;C:128;O:128,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+dyallae2z,orbital candidate,H;C;O;Fe;Mo;Au,,4,H:9;C:33;O:33,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+dyallae3z,orbital candidate,H;C;O;Fe;Mo;Au,,5,H:20;C:60;O:60,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+dyallae4z,orbital candidate,H;C;O;Fe;Mo;Au,,6,H:37;C:103;O:103,4,above_gpu_orbital_limit,"Contains angular momentum l=6, above g (l=4)"
+dyallav2z,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:13;C:42;O:42,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+dyallav3z,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),3,H:29;C:71;O:71,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+dyallav4z,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),4,H:53;C:111;O:111,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+dyallcv2z,orbital candidate,H;C;O;Fe;Mo;Au,,4,H:9;C:33;O:33,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+dyallcv3z,orbital candidate,H;C;O;Fe;Mo;Au,,5,H:20;C:60;O:60,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+dyallcv4z,orbital candidate,H;C;O;Fe;Mo;Au,,6,H:37;C:103;O:103,4,above_gpu_orbital_limit,"Contains angular momentum l=6, above g (l=4)"
+dyalldz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+dyallqz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+dyalltz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+dyallv2z,orbital candidate,H;C;O;Fe;Mo;Au,,3,H:9;C:33;O:33,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+dyallv3z,orbital candidate,H;C;O;Fe;Mo;Au,,4,H:20;C:55;O:55,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+dyallv4z,orbital candidate,H;C;O;Fe;Mo;Au,,5,H:37;C:86;O:86,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+dz,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),1,H:2;C:10;O:10,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+dzp,orbital candidate,H;C;O;Fe;Mo;Au,,3,H:5;C:15;O:15,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+dzpdk,orbital candidate,H;C;O;Fe;Mo;Au,,3,H:5;C:15;O:15,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+dzpdkh,orbital candidate,H;C;O;Fe;Mo;Au,,3,H:5;C:15;O:15,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+dzpdunning,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:5;C:15;O:15,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+dzvp,orbital candidate,H;C;O;Fe;Mo,Au(BasisNotFoundError),2,H:2;C:14;O:14,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+dzvp2,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:5;C:14;O:14,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+ecpds10mdfso,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ecpds28mdfso,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ecpds28mwbso,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ecpds46mdfso,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ecpds60mdfso,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ecpds60mwbso,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ecpds78mdfso,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ecpds92mdfbqso,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ecpds92mdfbso,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+ecpqvszp,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+faegredz,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+heavyaugccpvdzjkfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+heavyaugccpvdzri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+heavyaugccpvtzjkfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+heavyaugccpvtzri,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+iglo,orbital candidate,H;C,O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:17;C:42,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+iglo3,orbital candidate,H;C,O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:17;C:42,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+lanl08,orbital candidate,Fe;Mo;Au,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError),2,,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+lanl2dz,orbital candidate,H;C;O;Fe;Mo;Au,,2,H:2;C:9;O:9,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+lanl2tz,orbital candidate,Fe;Mo;Au,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError),2,,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+madef2qzvp,orbital candidate,H;C;O;Fe;Mo;Au,,4,H:30;C:61;O:61,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+madef2qzvpp,orbital candidate,H;C;O;Fe;Mo;Au,,4,H:30;C:61;O:61,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+madef2svp,orbital candidate,H;C;O;Fe;Mo;Au,,2,H:2;C:18;O:18,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+madef2svpp,orbital candidate,H;C;O;Fe;Mo;Au,,2,H:2;C:18;O:18,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+madef2tzvp,orbital candidate,H;C;O;Fe;Mo;Au,,3,H:6;C:35;O:35,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+madef2tzvpp,orbital candidate,H;C;O;Fe;Mo;Au,,4,H:14;C:35;O:35,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+minao,orbital candidate,H;C;O;Fe;Mo;Au,,2,H:1;C:5;O:5,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+pc0,orbital candidate,H;C;O,Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),1,H:2;C:9;O:9,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+pc1,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),3,H:5;C:14;O:14,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+pc2,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),4,H:14;C:30;O:30,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+pc3,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),5,H:34;C:64;O:64,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+pc4,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),6,H:63;C:109;O:109,4,above_gpu_orbital_limit,"Contains angular momentum l=6, above g (l=4)"
+pcseg0,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:2;C:9;O:9,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+pcseg1,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),3,H:5;C:14;O:14,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+pcseg2,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),4,H:14;C:30;O:30,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+pcseg3,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),5,H:33;C:60;O:60,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+pcseg4,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),6,H:61;C:101;O:101,4,above_gpu_orbital_limit,"Contains angular momentum l=6, above g (l=4)"
+pobtzvp,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),3,H:6;C:18;O:18,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+pobtzvpp,orbital candidate,H;O,C(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:9;O:23,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+qavgvszps,orbital candidate,H;C;O;Fe;Mo;Au,,2,H:4;C:9;O:9,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+qzp,orbital candidate,H;C;O;Fe;Mo,Au(BasisNotFoundError),5,H:30;C:56;O:56,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+qzpdk,orbital candidate,H;C;O;Fe;Mo,Au(BasisNotFoundError),5,H:30;C:56;O:56,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+qzpdkh,orbital candidate,H;C;O;Fe;Mo,Au(BasisNotFoundError),5,H:30;C:56;O:56,4,above_gpu_orbital_limit,"Contains angular momentum l=5, above g (l=4)"
+roosdz,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),3,H:9;C:23;O:23,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+roostz,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),4,H:23;C:46;O:46,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+sapgrasplarge,orbital candidate,H;C;O;Fe;Mo;Au,,0,H:1;C:1;O:1,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+sapgraspsmall,orbital candidate,H;C;O;Fe;Mo;Au,,0,H:1;C:1;O:1,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+sarcdkh,orbital candidate,Au,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError),3,,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+sbkjc,orbital candidate,H;C;O;Fe;Mo;Au,,2,H:2;C:8;O:8,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+sto3g,orbital candidate,H;C;O;Fe;Mo,Au(BasisNotFoundError),2,H:1;C:5;O:5,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+sto6g,orbital candidate,H;C;O;Fe,Mo(BasisNotFoundError);Au(BasisNotFoundError),2,H:1;C:5;O:5,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+stuttgart,orbital candidate,C;O,H(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),1,C:8;O:11,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+stuttgartdz,orbital candidate,C;O,H(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),1,C:8;O:11,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+stuttgartrlc,orbital candidate,C;O,H(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),1,C:8;O:11,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+stuttgartrsc,orbital candidate,Fe;Mo;Au,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError),3,,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+stuttgartrsc_mdf,orbital candidate,,H(BasisNotFoundError);C(BasisNotFoundError);O(BasisNotFoundError);Fe(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),,,4,no_test_elements,No basis data loaded for tested elements
+tzp,orbital candidate,H;C;O;Fe;Mo,Au(BasisNotFoundError),4,H:14;C:31;O:31,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+tzpdk,orbital candidate,H;C;O;Fe;Mo,Au(BasisNotFoundError),4,H:14;C:31;O:31,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+tzpdkh,orbital candidate,H;C;O;Fe;Mo,Au(BasisNotFoundError),4,H:14;C:31;O:31,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+tzv,orbital candidate,C;O;Fe,H(BasisNotFoundError);Mo(BasisNotFoundError);Au(BasisNotFoundError),2,C:14;O:14,4,orbital_basis_loads,Basis data loaded; SCF compatibility still requires calculation-level verification
+weigend,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+weigend+etb,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+weigendcfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+weigendjfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions
+weigendjkfit,auxiliary/fitting,,,,,4,not_orbital_basis,Excluded from EasyHybrid orbital-basis suggestions

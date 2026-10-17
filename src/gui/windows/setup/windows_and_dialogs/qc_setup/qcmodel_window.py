@@ -89,6 +89,7 @@ from gui.windows.setup.windows_and_dialogs.qc_setup.setup_orca import SetupORCAW
 from gui.windows.setup.windows_and_dialogs.qc_setup.setup_dftbplus import SetupDFTBplusWindow
 from gui.windows.setup.windows_and_dialogs.qc_setup.setup_xtb import SetupXTBWindow
 from gui.windows.setup.windows_and_dialogs.qc_setup.setup_mopac import SetupMOPACWindow
+from gui.windows.setup.windows_and_dialogs.qc_setup.setup_gpu4pyscf import SetupGPU4PySCFWindow
 
 
 VISMOL_HOME      = os.environ.get('VISMOL_HOME')
@@ -132,7 +133,8 @@ class EasyHybridSetupQCModelWindow:
                           1:'ORCA'   ,
                           2:'DFTB+'  ,
                           3:'xTB'    ,  
-                          #4:'MOPAC'  ,
+                          4:'GPU4PySCF',
+                          5:'MOPAC'  ,
                           #5:'sparrow',
                           }
         
@@ -154,6 +156,7 @@ class EasyHybridSetupQCModelWindow:
         self.setup_dftb_window = SetupDFTBplusWindow(self.main_session, self)
         self.setup_xtb_window  = SetupXTBWindow(self.main_session, self)
         self.setup_mopac_window= SetupMOPACWindow(self.main_session, self)
+        self.setup_gpu4pyscf_window = SetupGPU4PySCFWindow(self.main_session, self)
         
         self.orca_options = ''
         self.orca_scratch = ''
@@ -325,7 +328,13 @@ class EasyHybridSetupQCModelWindow:
             self.setup_dftb_window.close_window ( None,  None)
         
         if self.setup_xtb_window.Visible:
-            self.setup_dftb_window.close_window ( None,  None)
+            self.setup_xtb_window.close_window ( None,  None)
+
+        if self.setup_mopac_window.Visible:
+            self.setup_mopac_window.close_window(None, None)
+
+        if self.setup_gpu4pyscf_window.Visible:
+            self.setup_gpu4pyscf_window.close_window(None, None)
 
     def on_spian_button_change (self, widget):
         """ Function doc """
@@ -375,9 +384,17 @@ class EasyHybridSetupQCModelWindow:
             self.setup_xtb_window.open_window()
 
         elif self.qc_engine_id == 4:
+            self.builder.get_object('button_setup_dftb').set_label('GPU4PySCF Setup')
+            self.builder.get_object('button_setup_dftb').show()
+            self.builder.get_object('button_setup_orca').hide()
+            self.builder.get_object('expander_DIISSCF_converger').hide()
+            self.builder.get_object('label_method').hide()
+            self.builder.get_object('QCModel_methods_combobox').hide()
+            self.setup_gpu4pyscf_window.open_window()
+
+        elif self.qc_engine_id == 5:
             self.builder.get_object('button_setup_dftb').set_label('MOPAC Setup')
             self.builder.get_object('button_setup_dftb').show()
-            
             self.builder.get_object('button_setup_orca').hide()
             self.builder.get_object('expander_DIISSCF_converger').hide()
             self.builder.get_object('label_method').hide()
@@ -480,12 +497,22 @@ class EasyHybridSetupQCModelWindow:
             parameters['keywords'  ] = self.setup_xtb_window.parameters['add_keywords'] 
             parameters['scratch'   ] = self.setup_xtb_window.parameters['scratch'] 
             parameters['xtb_backup_files'] = self.setup_xtb_window.parameters['backup_files']
-        
-        elif self.qc_engine_id == 4:
-            #parameters['method'    ]  = 'MOPAC'
-            parameters['hamiltonian'] = self.setup_mopac_window.parameters['method']  
-            parameters['keywords'  ]  = self.setup_mopac_window.parameters['add_keywords'] 
-            parameters['scratch'   ]  = self.setup_mopac_window.parameters['scratch'] 
+
+        elif self.qc_engine_id == 4: # GPU4PySCF
+            gpu_parameters = self.setup_gpu4pyscf_window.parameters
+            parameters['method'] = gpu_parameters['method']
+            parameters['functional'] = gpu_parameters['functional']
+            parameters['basis'] = gpu_parameters['basis']
+            parameters['density_fitting'] = gpu_parameters['density_fitting']
+            parameters['max_cycles'] = gpu_parameters['max_cycles']
+            parameters['conv_tolerance'] = gpu_parameters['conv_tolerance']
+            parameters['scratch'] = gpu_parameters['scratch']
+
+        elif self.qc_engine_id == 5: # MOPAC
+            mopac_parameters = self.setup_mopac_window.parameters
+            parameters['hamiltonian'] = mopac_parameters['method']
+            parameters['keywords'] = mopac_parameters['keywords']
+            parameters['scratch'] = mopac_parameters['scratch']
 
 
         parameters['energyTolerance'  ] = float(self.builder.get_object('entry_energyTolerance').get_text())
@@ -520,6 +547,12 @@ class EasyHybridSetupQCModelWindow:
         elif self.qc_engine_id == 3:
             #print(self.method_id, self.setup_xtb_window)
             self.setup_xtb_window.open_window() 
+
+        elif self.qc_engine_id == 4:
+            self.setup_gpu4pyscf_window.open_window()
+
+        elif self.qc_engine_id == 5:
+            self.setup_mopac_window.open_window()
         
         else:
             pass
