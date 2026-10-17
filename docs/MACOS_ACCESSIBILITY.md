@@ -100,13 +100,7 @@ and `EASYHYBRID3_TEST_HOOK` resolves to that exact file. Setting
   `examples/pkl/1UAO_OPLS.pkl` (Chignolin, 138 atoms).
 - Hard-coded `/Users/shabir/...` paths removed from the remaining helper
   scripts; none remain under `platform/`.
-- **3D rendering NOT confirmed.** In window captures (`screencapture -l`) the
-  viewport shows only the axes triad, with the bridge enabled, with
-  `EASYHYBRID3_DISABLE_AX=1`, in a clean clone, and at the pre-accessibility
-  commit `dda360f` (no accessibility code). The user reports the molecule
-  appears while using the trackpad, then disappears and stays hidden. This
-  is independent of the accessibility work and sits in the macOS GLFW
-  offscreen-to-GTK display path (see `MACOS_NATIVE_RENDERING_FIX.md`); it is
-  an open issue, not a pass. Synthetic mouse/scroll events did not reproduce
-  the flash. OpenGL also logs `overflow encountered in cast` from
-  `vismol_glcore.py` (`_hashable`) at startup.
+- **3D rendering:** was blank after trackpad use at every commit tested,
+  including the pre-accessibility `dda360f`. Root cause and fix (trackpad
+  scroll units in `vismol_gtkwidget.py`) are in `MACOS_NATIVE_RENDERING_FIX.md`
+  (Milestone 5). Verified there with the bridge on and off.

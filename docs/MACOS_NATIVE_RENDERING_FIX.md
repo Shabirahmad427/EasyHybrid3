@@ -193,3 +193,54 @@ used to verify the rendering fix end-to-end. This bug is
 platform-independent (same code path would fail identically on Linux)
 and unrelated to the macOS rendering work above — flagging it here
 only because it was noticed along the way.
+
+## Molecule disappearing after trackpad use (2026-10-16, Milestone 5)
+
+**Symptom.** Chignolin loads (138 atoms) and is visible for the first frames,
+appears again while the trackpad is used, then the viewport shows only the
+axes triad and stays that way. Startup also logged
+`RuntimeWarning: overflow encountered in cast` (from `_hashable()` in
+`vismol_glcore.py`, called by `load_fog()`).
+
+**Not the cause** (checked with per-frame instrumentation of `_draw_macos`):
+GL errors (`glGetError` = 0 on every frame), framebuffer completeness
+(`GL_FRAMEBUFFER_COMPLETE`), viewport size (matched the widget), readback and
+Cairo blit (the first frames read back ~15k molecule pixels), and the
+accessibility bridge (identical with `EASYHYBRID3_DISABLE_AX=1` and at the
+pre-accessibility commit `dda360f`).
+
+**Root cause.** The camera clip slab (`z_near`/`z_far`) ran away. GTK3/Quartz
+delivers trackpad scrolling as SMOOTH events whose `delta_y` is in *points*
+(measured 1..~20 per event, accelerating during a swipe). `_mouse_scroll_smooth()`
+treated each point as one wheel notch (`steps = int(total)`), so one event
+called `VismolGLCore.mouse_scroll()` up to ~20 times, each widening the slab by
+x e^0.138. Logged `z_far` went 13 -> 5.9e6 -> 6.8e19 -> ... -> 8e25; with the
+molecule clipped/unresolvable the frame contained only the axes (153 lit
+pixels), and the fog uniforms overflowed float32 (the warning above is a
+symptom, not a separate bug).
+
+**Fix** (`vismol_gtkwidget.py`, macOS-only code path -- `SMOOTH_SCROLL_MASK` is
+only requested on macOS): divide the smooth `delta_y` by
+`_SMOOTH_SCROLL_POINTS_PER_STEP` (30 points per step) before accumulating
+whole steps. Mouse-wheel (discrete) events are unchanged. Slab maths, camera,
+shaders and scientific code are untouched.
+
+**Evidence.**
+- Before: after trackpad use `z_far` ~1e21..1e25, 153 non-background pixels.
+- After, with ~200-340 real trackpad scroll events during the run: `z_far`
+  stays ~50-3500, 14-27k non-background pixels in the read-back frame and the
+  atoms/bonds visible in window screenshots (bridge on and off, ~17% of the
+  viewport lit in both).
+- 20 File->Open + New System dialog cycles (`DIALOG_TEST_RESULT=PASS`), then
+  the molecule still visible; normal shutdown and SIGTERM exit clean.
+
+**Not verified / open.**
+- Rotate, zoom and window resize were exercised by real use (user report) but
+  my synthetic mouse events did not visibly change the frame, so they are not
+  independently verified by automation.
+- 30 points/step is a tuning value chosen from measured deltas, not a
+  calibrated constant; the slab still has no upper bound (a very long gesture
+  can still widen it a lot), which is a pre-existing design property.
+- The fix lives in the `src/graphics_engine` submodule; its commit must be
+  pushed to the submodule's remote before a fresh `git submodule update` will
+  find it.
