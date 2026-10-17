@@ -476,6 +476,24 @@ def main():
         # actual main window; GTK/Linux startup and the rendering path remain
         # unchanged. Disable with EASYHYBRID3_DISABLE_AX=1.
         if sys.platform == "darwin":
+            # Test-only GTK driver: it is inert unless an explicit test hook
+            # path is supplied by the existing runtime launcher.
+            test_hook_path = os.environ.get("EASYHYBRID3_TEST_HOOK")
+            if test_hook_path:
+                def _run_macos_test_hook():
+                    try:
+                        import importlib.util
+                        spec = importlib.util.spec_from_file_location(
+                            "easyhybrid3_runtime_test_hook", test_hook_path)
+                        hook = importlib.util.module_from_spec(spec)
+                        spec.loader.exec_module(hook)
+                        hook.run(main_window, Gtk, GLib)
+                    except Exception:
+                        logging.exception("EasyHybrid3 test hook failed")
+                    return GLib.SOURCE_REMOVE
+
+                GLib.idle_add(_run_macos_test_hook)
+
             def _initialize_macos_accessibility():
                 try:
                     macos_platform_path = os.path.join(EASYHYBRID_HOME, "platform", "macos")

@@ -348,3 +348,54 @@ Build of the native bridge passed again in Milestone 3.6. Python syntax check an
 ### Milestone 3.6 classification
 
 **PARTIAL — AX editing and repeated enabled dialog lifecycles pass; crash resolution and shutdown stability remain unconfirmed.** No speculative crash fix or scientific-code modification was made.
+
+## Milestone 3.8 verification (2026-10-16)
+
+### In-process production GTK test hook
+
+Added `platform/macos/gtk3_accessibility/tools/runtime_test_hook.py`, loaded only when the existing runner is given `EASYHYBRID3_TEST_HOOK=...`. It invokes EasyHybrid's real File menu callback, which constructs and runs the production `Gtk.FileChooserDialog`; a GLib timer returns `Gtk.ResponseType.CANCEL` from that same dialog. It opens the existing `ImportANewSystemWindow` and activates its actual Cancel button. The shutdown mode marks the in-memory session changed, invokes `MainWindow.on_delete_event()`, detects the resulting real `Gtk.MessageDialog`, responds with `Gtk.ResponseType.NO` (Don't Save), and allows the callback's normal `Gtk.main_quit()` to run. No test project is saved. With the variable unset, the test hook is not imported or executed. The existing runner now exports hook settings before launching Python and treats the hook log as a readiness signal.
+
+### AX-disabled production dialog stress and shutdown
+
+Command used:
+
+```sh
+EASYHYBRID3_M33_DISABLED=1 \
+EASYHYBRID3_TEST_HOOK=platform/macos/gtk3_accessibility/tools/runtime_test_hook.py \
+EASYHYBRID3_TEST_HOOK_MODE=dialogs_shutdown \
+EASYHYBRID3_TEST_HOOK_CYCLES=20 \
+platform/macos/gtk3_accessibility/tools/run-milestone-3-3.command
+```
+
+Run `/private/tmp/easyhybrid3-m33-20261016-223323/` completed 20 production File → Open → Cancel cycles and 20 production New Project → Cancel cycles inside the EasyHybrid GTK main process. Every cycle returned to its caller with no matching dialog left in `Gtk.Window.list_toplevels()`. The hook log reports `DIALOG_TEST_RESULT=PASS cycles=20`. It then reports `NORMAL_CLOSE prompt=present response=NO` and `NORMAL_CLOSE callback-returned=yes`. The existing runner records `APP_WAIT_STATUS=0` and `CRASH_REPORTS=none`. There was no hang or crash in this run.
+
+The earlier successful enabled AX stress remains in `/private/tmp/easyhybrid3-m33-20261016-222351/ax-cycles.log`: 20 Open/Cancel plus 20 New Project/edit/Cancel, with all edits verified and all 40 AX dialog nodes removed. A later enabled runner also completed three repeat cycles before desktop testing. Thus enabled and disabled production chooser paths both completed their tested repetitions; the original status-139 event was not reproduced.
+
+### Graceful shutdown in both modes
+
+The same hook exercised the actual `MainWindow.on_delete_event()` flow and answered its real unsaved-session prompt in both modes:
+
+| Mode | Run directory | Prompt evidence | Process status | New Python crash report |
+|---|---|---|---:|---|
+| AX disabled, after 20+20 dialogs | `/private/tmp/easyhybrid3-m33-20261016-223323/` | `NORMAL_CLOSE prompt=present response=NO` | 0 | none |
+| AX enabled | `/private/tmp/easyhybrid3-m33-20261016-223334/` | `NORMAL_CLOSE prompt=present response=NO` | 0 | none |
+
+The enabled desktop-interaction run `/private/tmp/easyhybrid3-m33-20261016-223457/` also ended with status 0 and no new crash report after the window was closed. CUA's close operation timed out while the application closed; the runner independently recorded normal status 0. No signal termination was counted as graceful-shutdown evidence.
+
+### Desktop bridge
+
+Attached CUA to the exact Python 3.12 application path (`/opt/homebrew/Cellar/python@3.12/3.12.15/Frameworks/Python.framework/Versions/3.12/Resources/Python.app`) while the production PID was 66291. The attachment exposed the EasyHybrid3 main window. After the existing AX-cycle runner had finished (avoiding concurrent dialog transitions), CUA opened and canceled the native Open chooser, opened New Project, set the actual tag entry to `DBTEST`, read back `DBTEST`, and canceled to the main window. Resetting the CUA session disconnected the automation binding; a trusted read-only native AX audit still found the same application PID/window afterward. This separately verifies attachment, button/dialog operations, editing, and disconnect without affecting the app. Early CUA attempts used a non-unique Python bundle identifier or acted while the AX cycle client was changing windows; those caused the earlier ambiguity/timeout/stale-index errors, not an EasyHybrid crash.
+
+### LLDB and historical chooser crash
+
+An LLDB `thread backtrace all` snapshot of enabled PID 64834 showed the main thread waiting in `NSApplication nextEvent` → GDK Quartz `poll_func` → GLib main loop → `gtk_main()`. Worker threads were in their expected GLib poll/wait states. This was an idle, responsive main loop snapshot, not a captured hang; it does not identify a close-prompt defect. No native stack was captured for the historical status-139 report. Its Python traceback still identifies `Gtk.FileChooserDialog.run()` as the call path but cannot attribute the fault to GTK Quartz, bridge object lifetime, or reentrancy. The crash did not recur in the disabled 20+20 stress run or the enabled AX stress and desktop runs. **Historical crash root cause remains unknown; it is a residual risk, not a claimed fix.**
+
+### Regression checks and classification
+
+- GTK3 Quartz native module build: PASS (`platform/macos/gtk3_accessibility/build.sh`).
+- Python syntax: PASS (`python3 -m py_compile easyhybrid.py platform/macos/gtk3_accessibility/bootstrap.py platform/macos/gtk3_accessibility/tools/runtime_test_hook.py`).
+- Existing runner shell syntax: PASS (`zsh -n` for `run-milestone-3-3.command` and `run-ax-audit.command`, outside restricted shell context).
+- `git diff --check`: PASS.
+- Scientific source and workflows: untouched in this milestone. Previously verified Chignolin rendering and scientific workflow evidence remains in Milestone 3.5.
+
+**Milestone 3.8 result: PASS for enabled/disabled dialog stability, normal shutdown in both modes, preserved AX edit/dialog behavior, and desktop-bridge interactions. Historical segmentation-fault cause remains unknown and documented as a residual risk.**

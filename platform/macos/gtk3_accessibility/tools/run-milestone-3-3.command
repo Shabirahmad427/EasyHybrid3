@@ -16,6 +16,15 @@ print "PYTHON=$PYTHON"
 print "DISPLAY=${DISPLAY:-<unset>}"
 print "PYTHONPATH=${PYTHONPATH:-<unset>}"
 
+# Optional test-only hook runs inside the actual EasyHybrid process after its
+# production window and callbacks exist. The app imports this hook only when
+# EASYHYBRID3_TEST_HOOK names a module file.
+TEST_HOOK="${EASYHYBRID3_TEST_HOOK:-}"
+if [[ -n "$TEST_HOOK" ]]; then
+  export EASYHYBRID3_TEST_HOOK="$TEST_HOOK"
+  print "TEST_HOOK=$TEST_HOOK"
+fi
+
 CRASH_DIR="$HOME/Library/Logs/DiagnosticReports"
 /usr/bin/find "$CRASH_DIR" -maxdepth 1 -type f -iname '*python*' -print 2>/dev/null | /usr/bin/sort > "$RUN_DIR/crash-reports-before.txt"
 
@@ -35,6 +44,12 @@ else
   print "ACCESSIBILITY=enabled"
 fi
 
+if [[ -n "$TEST_HOOK" ]]; then
+  export EASYHYBRID3_TEST_HOOK_MODE="${EASYHYBRID3_TEST_HOOK_MODE:-dialogs}"
+  export EASYHYBRID3_TEST_HOOK_CYCLES="${EASYHYBRID3_TEST_HOOK_CYCLES:-20}"
+  export EASYHYBRID3_TEST_HOOK_LOG="${EASYHYBRID3_TEST_HOOK_LOG:-$RUN_DIR/gtk-test-hook.log}"
+fi
+
 print "Launching production app; close the app window or press Ctrl-C here to end this run."
 "$PYTHON" -X faulthandler -u easyhybrid.py >"$RUN_DIR/application.log" 2>&1 &
 APP_PID=$!
@@ -49,12 +64,15 @@ for attempt in {1..120}; do
   if /usr/bin/grep -q "event=finish-launching\|accessibility registered" "$RUN_DIR/application.log" 2>/dev/null; then
     break
   fi
+  if [[ -n "$TEST_HOOK" ]] && /usr/bin/grep -q "HOOK_START" "${EASYHYBRID3_TEST_HOOK_LOG:-$RUN_DIR/gtk-test-hook.log}" 2>/dev/null; then
+    break
+  fi
   sleep 1
 done
 print "READY_CHECK $(date '+%Y-%m-%dT%H:%M:%S%z')"
 /bin/cat "$RUN_DIR/application.log"
 
-if kill -0 "$APP_PID" 2>/dev/null && [[ "${EASYHYBRID3_M33_DISABLED:-0}" != "1" ]]; then
+if kill -0 "$APP_PID" 2>/dev/null && [[ "${EASYHYBRID3_M33_DISABLED:-0}" != "1" && -z "$TEST_HOOK" ]]; then
   CYCLES="${EASYHYBRID3_M33_CYCLES:-3}"
   print "Running native AX dialog/edit cycles: $CYCLES"
   EASYHYBRID3_AX_TARGET=production EASYHYBRID3_AX_PID="$APP_PID" \
