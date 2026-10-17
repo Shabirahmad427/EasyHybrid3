@@ -234,13 +234,38 @@ shaders and scientific code are untouched.
 - 20 File->Open + New System dialog cycles (`DIALOG_TEST_RESULT=PASS`), then
   the molecule still visible; normal shutdown and SIGTERM exit clean.
 
-**Not verified / open.**
-- Rotate, zoom and window resize were exercised by real use (user report) but
-  my synthetic mouse events did not visibly change the frame, so they are not
-  independently verified by automation.
-- 30 points/step is a tuning value chosen from measured deltas, not a
-  calibrated constant; the slab still has no upper bound (a very long gesture
-  can still widen it a lot), which is a pre-existing design property.
-- The fix lives in the `src/graphics_engine` submodule; its commit must be
-  pushed to the submodule's remote before a fresh `git submodule update` will
-  find it.
+**Scroll calibration (Milestone 5.1, real trackpad input, 748 events in four
+gesture groups: small, medium, fast, momentum).** Raw `delta_y` reached 72
+points per event; with 30 points/step at most 3 steps were applied per event
+(before the fix: ~20). `z_far` stayed within 11.98..25.71 over the whole
+session (starts at 13.0; before the fix it reached ~1e25); a single gesture
+moved it by at most ~8 units (e.g. 12.6 -> 20.4 on a fast flick). All 330
+logged frames had `glGetError` = 0 and contained the molecule (9k-34k
+non-background pixels). The factor was therefore left at 30. No clipping
+limit was added. Discrete mouse-wheel events do not pass through this code
+and are unchanged (by code inspection; no physical wheel was available).
+
+**Resize.** Window sizes set through the Accessibility API produced viewport
+frames of 1217x671, 947x350 and 647x207, each with `glGetError` = 0 and the
+molecule present (13k-87k non-background pixels). Rotation was exercised by
+the user's own drag and by the 20-cycle dialog test; the logs of the
+calibration run did not record per-frame rotation, so no automated rotation
+measurement is claimed.
+
+**Publication.** The upstream `casebor/graphics_engine` (now `casebor/Vismol`)
+and `ferbachega/EasyHybrid3` are read-only for this account (HTTP 403), so
+the fix was published to the fork `Shabirahmad427/Vismol` (branch
+`vismol_easyhybrid`, fast-forward from `2df3cd9` to `6a25a2e`) and
+`.gitmodules` now points at that fork. Upstream should merge the same commit
+and the URL can then be reverted.
+
+**Fresh-clone check.** `git clone` + `git submodule update --init --recursive`
+fetched `6a25a2e` from the fork; Cython extensions and the arm64 accessibility
+bridge built; Chignolin rendered (screenshot, 132k lit viewport pixels), no
+overflow warnings, AX attach (21 buttons), `AXPress` and AX text edit worked,
+and the app shut down cleanly on SIGTERM.
+
+**Remaining limitations.**
+- 30 points/step is calibrated from measured deltas, not from a perceptual
+  study; the slab still has no upper bound.
+- The submodule URL points at a personal fork until upstream merges the fix.
