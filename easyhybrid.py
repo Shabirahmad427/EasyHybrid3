@@ -109,19 +109,6 @@ Você não precisa instalar nada.Ele implementa expressões regulares
 '''
 
 
-'''
-os.environ["PDYNAMO3_HOME"]         = "/home/fernando/programs/pDynamo3"
-os.environ["PDYNAMO3_PARAMETERS"]   = "/home/fernando/programs/pDynamo3/parameters"
-os.environ["PDYNAMO3_SCRATCH"]      = "/home/fernando/programs/pDynamo3/scratch"
-os.environ["PDYNAMO3_ORCACOMMAND"]  = "/home/fernando/programs/orca_6_1_0_linux_x86-64_shared_openmpi418/orca"
-os.environ["PDYNAMO3_XTBCOMMAND"]   = "/home/fernando/programs/xtb-6.6.1/bin/xtb"
-os.environ["PDYNAMO3_DFTBCOMMAND"]  = "/home/fernando/programs/dftbplus-24.1.x86_64-linux/bin/dftb+"
-sys.path.append("/home/fernando/programs/pDynamo3")
-#sys.path.append("/home/fernando/programs/amber24_src/lib/python3.12/site-packages")
-'''
-
-#filepath = '/home/fernando/programs/pDynamo3/installation/shellScripts/environment_bash.com'
-
 def parse_bash_env_file(filepath):
     """
     Parse a bash environment file and return a dictionary
