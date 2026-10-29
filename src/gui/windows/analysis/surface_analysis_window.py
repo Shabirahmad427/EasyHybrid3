@@ -1832,12 +1832,12 @@ class SurfaceAnalysisWindow(Gtk.Window):
         elif index == 0:
             selection     = self.treeview.get_selection()
             (model, iter) = selection.get_selected()
-            if iter is None:
-                # . 2026-10-24: raised a TypeError when no orbital was selected
-                self.main.simple_dialog.info(msg="Choose an orbital in the list first (press Get Orbitals "
-                                                 "if the list is empty).", title="Surfaces")
-                return
-        
+            # GTK returns (model, None) when no orbital/selection row is
+            # active.  Do not pass that None into TreeModel.get_value().
+            if model is None or iter is None:
+                self._show_wavefunction_error(
+                    "Select an orbital or atom selection before rendering.")
+                return False
             
             backup = []
             try:
@@ -3526,5 +3526,4 @@ class TreeViewMenu:
         self.system_id = system_id
         #print (vobject)
         self.tree_view_menu.popup(None, None, None, None, 0, 0)
-
 

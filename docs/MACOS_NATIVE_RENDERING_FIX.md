@@ -193,3 +193,79 @@ used to verify the rendering fix end-to-end. This bug is
 platform-independent (same code path would fail identically on Linux)
 and unrelated to the macOS rendering work above — flagging it here
 only because it was noticed along the way.
+
+## Molecule disappearing after trackpad use (2026-10-16, Milestone 5)
+
+**Symptom.** Chignolin loads (138 atoms) and is visible for the first frames,
+appears again while the trackpad is used, then the viewport shows only the
+axes triad and stays that way. Startup also logged
+`RuntimeWarning: overflow encountered in cast` (from `_hashable()` in
+`vismol_glcore.py`, called by `load_fog()`).
+
+**Not the cause** (checked with per-frame instrumentation of `_draw_macos`):
+GL errors (`glGetError` = 0 on every frame), framebuffer completeness
+(`GL_FRAMEBUFFER_COMPLETE`), viewport size (matched the widget), readback and
+Cairo blit (the first frames read back ~15k molecule pixels), and the
+accessibility bridge (identical with `EASYHYBRID3_DISABLE_AX=1` and at the
+pre-accessibility commit `dda360f`).
+
+**Root cause.** The camera clip slab (`z_near`/`z_far`) ran away. GTK3/Quartz
+delivers trackpad scrolling as SMOOTH events whose `delta_y` is in *points*
+(measured 1..~20 per event, accelerating during a swipe). `_mouse_scroll_smooth()`
+treated each point as one wheel notch (`steps = int(total)`), so one event
+called `VismolGLCore.mouse_scroll()` up to ~20 times, each widening the slab by
+x e^0.138. Logged `z_far` went 13 -> 5.9e6 -> 6.8e19 -> ... -> 8e25; with the
+molecule clipped/unresolvable the frame contained only the axes (153 lit
+pixels), and the fog uniforms overflowed float32 (the warning above is a
+symptom, not a separate bug).
+
+**Fix** (`vismol_gtkwidget.py`, macOS-only code path -- `SMOOTH_SCROLL_MASK` is
+only requested on macOS): divide the smooth `delta_y` by
+`_SMOOTH_SCROLL_POINTS_PER_STEP` (30 points per step) before accumulating
+whole steps. Mouse-wheel (discrete) events are unchanged. Slab maths, camera,
+shaders and scientific code are untouched.
+
+**Evidence.**
+- Before: after trackpad use `z_far` ~1e21..1e25, 153 non-background pixels.
+- After, with ~200-340 real trackpad scroll events during the run: `z_far`
+  stays ~50-3500, 14-27k non-background pixels in the read-back frame and the
+  atoms/bonds visible in window screenshots (bridge on and off, ~17% of the
+  viewport lit in both).
+- 20 File->Open + New System dialog cycles (`DIALOG_TEST_RESULT=PASS`), then
+  the molecule still visible; normal shutdown and SIGTERM exit clean.
+
+**Scroll calibration (Milestone 5.1, real trackpad input, 748 events in four
+gesture groups: small, medium, fast, momentum).** Raw `delta_y` reached 72
+points per event; with 30 points/step at most 3 steps were applied per event
+(before the fix: ~20). `z_far` stayed within 11.98..25.71 over the whole
+session (starts at 13.0; before the fix it reached ~1e25); a single gesture
+moved it by at most ~8 units (e.g. 12.6 -> 20.4 on a fast flick). All 330
+logged frames had `glGetError` = 0 and contained the molecule (9k-34k
+non-background pixels). The factor was therefore left at 30. No clipping
+limit was added. Discrete mouse-wheel events do not pass through this code
+and are unchanged (by code inspection; no physical wheel was available).
+
+**Resize.** Window sizes set through the Accessibility API produced viewport
+frames of 1217x671, 947x350 and 647x207, each with `glGetError` = 0 and the
+molecule present (13k-87k non-background pixels). Rotation was exercised by
+the user's own drag and by the 20-cycle dialog test; the logs of the
+calibration run did not record per-frame rotation, so no automated rotation
+measurement is claimed.
+
+**Publication.** The upstream `casebor/graphics_engine` (now `casebor/Vismol`)
+and `ferbachega/EasyHybrid3` are read-only for this account (HTTP 403), so
+the fix was published to the fork `Shabirahmad427/Vismol` (branch
+`vismol_easyhybrid`, fast-forward from `2df3cd9` to `6a25a2e`) and
+`.gitmodules` now points at that fork. Upstream should merge the same commit
+and the URL can then be reverted.
+
+**Fresh-clone check.** `git clone` + `git submodule update --init --recursive`
+fetched `6a25a2e` from the fork; Cython extensions and the arm64 accessibility
+bridge built; Chignolin rendered (screenshot, 132k lit viewport pixels), no
+overflow warnings, AX attach (21 buttons), `AXPress` and AX text edit worked,
+and the app shut down cleanly on SIGTERM.
+
+**Remaining limitations.**
+- 30 points/step is calibrated from measured deltas, not from a perceptual
+  study; the slab still has no upper bound.
+- The submodule URL points at a personal fork until upstream merges the fix.
