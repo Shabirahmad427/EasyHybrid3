@@ -394,6 +394,14 @@ def load_modules(callback_final):
     threading.Thread(target=_load).start()
 
 
+# . command-line flags of the control server (removed from sys.argv: its last
+#   item is read as the file to open)
+_CONTROL_FLAGS     = ('--control', '--control-dialogs')
+_CONTROL_REQUESTED = (any(a in _CONTROL_FLAGS for a in sys.argv[1:])
+                      or os.environ.get('EASYHYBRID_CONTROL', '').lower() in ('1', 'yes', 'true', 'on'))
+_CONTROL_DIALOGS   = '--control-dialogs' in sys.argv[1:]
+sys.argv = [sys.argv[0]] + [a for a in sys.argv[1:] if a not in _CONTROL_FLAGS]
+
 def main():
     splash = SplashScreen()
     splash.show_all()
@@ -450,7 +458,7 @@ def main():
         #This is the editor
         
         
-        main_window.builder.get_object('_show_cell')      .hide() # Builder
+        
         
         
         
@@ -459,15 +467,30 @@ def main():
         #main_window.builder.get_object('menuitem_reimaging')   .hide()
         #main_window.builder.get_object('menuitem_RMSD_tool')   .hide()
         
-        
-        main_window.builder.get_object('menuitem_rama')   .hide()
-        main_window.builder.get_object('menuitem_transition_state_search').hide() # Baker method
-        main_window.builder.get_object('menuitem_reaction_path')   .hide() # IRC / Reaction Path...
-        main_window.builder.get_object('menuitem_cpr')   .hide() # Conjugate Peak Refinement...
+        #main_window.builder.get_object('_show_cell')      .hide() # Builder
+        #main_window.builder.get_object('menuitem_rama')   .hide()
+        #main_window.builder.get_object('menuitem_transition_state_search').hide() # Baker method
+        #main_window.builder.get_object('menuitem_reaction_path')   .hide() # IRC / Reaction Path...
+        #main_window.builder.get_object('menuitem_cpr')   .hide() # Conjugate Peak Refinement...
         main_window.builder.get_object('menuitem_extras') .hide() # Extras
-        main_window.builder.get_object('menuitem_rdf_analysis')   .hide() # RDF Analysis (g(r))
+        #main_window.builder.get_object('menuitem_rdf_analysis')   .hide() # RDF Analysis (g(r))
         
         main_window.builder.get_object('menuitem_advanced_rc_scans')   .hide() # RDF Analysis (g(r))
+        
+        
+        '''AI assistent'''
+        main_window.builder.get_object('menuitem_control_server')   .hide()  
+        main_window.builder.get_object('menuitem_control_settings')   .hide()  
+        main_window.builder.get_object('menuitem_ai_assistant')   .hide()  
+        
+        '''Remote jobs'''
+        main_window.builder.get_object('menuitem_remote_machines')   .hide()  
+        main_window.builder.get_object('menuitem_run_on')   .hide()  
+        #main_window.builder.get_object('menuitem_ai_assistant')   .hide()  
+        
+        
+        
+        
         
         
         
@@ -491,6 +514,18 @@ def main():
         #   actually dispatches ".easy" correctly (see gui/eSession.py) --
         #   instead of vm_session.load_molecule(); a genuine failure is
         #   now printed instead of silently disappearing.
+        # . 2026-10-28: control server for scripts and AI assistants (src/automation,
+        #   docs/AI_CONTROL.md): --control, or EASYHYBRID_CONTROL=1. With
+        #   --control-dialogs the information/"Finished!" dialogs are still shown.
+        if _CONTROL_REQUESTED:
+            try:
+                from automation.server import ControlServer
+                main_window.control_server = ControlServer(main_window, dialogs_off = False if _CONTROL_DIALOGS else None)
+                main_window.control_server.start()
+                main_window.window.connect('destroy', lambda *_: main_window.control_server.stop())
+            except Exception:
+                traceback.print_exc()
+
         if len(sys.argv) > 1:
             filein = sys.argv[-1]
             try:

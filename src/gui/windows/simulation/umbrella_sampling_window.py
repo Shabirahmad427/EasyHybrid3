@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #  
-#  EasyHybrid: Python interface for QM/MM and molecular simulations using pDynamo3
+#  EasyHybrid: Python interface for QC/MM and molecular simulations using pDynamo3
 #  Module: Selection utilities for pDynamo systems
 #
 #  Copyright 2022-2025 Fernando Bachega
@@ -26,7 +26,7 @@
 #
 #  Description:
 #      Provides functions for selecting atoms and residues in pDynamo systems
-#      to facilitate QM/MM partitioning and molecular simulations.
+#      to facilitate QC/MM partitioning and molecular simulations.
 #
 from util.debug import dprint
 import gi
@@ -132,7 +132,7 @@ class UmbrellaSamplingWindow(Gtk.Window):
             self.builder.connect_signals(self)
             
             self.window = self.builder.get_object('umbrella_samppling_window')
-            self.window.set_title('Umbrella Samppling Window')
+            self.window.set_title('Umbrella Sampling')
             self.window.set_keep_above(True)
             self.window.connect("destroy", self.close_window)
             
@@ -226,8 +226,11 @@ class UmbrellaSamplingWindow(Gtk.Window):
             self.opt_methods_combo = self.builder.get_object('combobox_geo_opt')
             self.opt_method_store = Gtk.ListStore(str)
 
+            # . 2026-10-24: readable names; the keys of self.opt_methods are what the job reads
+            _names = {'ConjugatedGradient': 'Conjugate Gradient', 'SteepestDescent': 'Steepest Descent',
+                      'LFBGS': 'L-BFGS', 'QuasiNewton': 'Quasi-Newton', 'FIRE': 'FIRE'}
             for key, method in self.opt_methods.items():
-                self.opt_method_store.append([method])
+                self.opt_method_store.append([_names.get(method, method)])
             
             self.opt_methods_combo.set_model(self.opt_method_store)
             renderer_text = Gtk.CellRendererText()
@@ -679,6 +682,17 @@ class UmbrellaSamplingWindow(Gtk.Window):
             if entry_name:
                 entry_name.set_text(str(atom_name))
 
+        # Mass-weighted multiple distance: reuse the scan's own sigmas, and
+        # fill dminimum so get_rc_data() doesn't fail on an empty entry.
+        sig1, sig3 = data.get('sigma_pk1pk3'), data.get('sigma_pk3pk1')
+        mass = rc_box.builder.get_object('mass_restraints1')
+        if data['rc_type'] == 'multiple_distance' and sig1 is not None and mass:
+            weighted = abs(sig1 - 1.0) > 1e-6 or abs(sig3 + 1.0) > 1e-6
+            mass.set_active(weighted)
+            rc_box.sigma_pk1_pk3, rc_box.sigma_pk3_pk1 = sig1, sig3
+        if data.get('dminimum') is not None:
+            rc_box.builder.get_object('entry_dmin_coord1').set_text(str(data['dminimum']))
+
     def _apply_detected_advanced_rc (self, liststore, data):
         """ Fills ONLY an AdvancedReactionCoordinateBox's weighted-distance
         treeview (via its backing liststore) from a
@@ -1094,7 +1108,7 @@ class UmbrellaSamplingWindow_old(Gtk.Window):
             self.builder.connect_signals(self)
             
             self.window = self.builder.get_object('umbrella_samppling_window')
-            self.window.set_title('Umbrella Samppling Window')
+            self.window.set_title('Umbrella Sampling')
             self.window.set_keep_above(True)
             self.window.connect("destroy", self.close_window)
             
@@ -1174,8 +1188,11 @@ class UmbrellaSamplingWindow_old(Gtk.Window):
             self.opt_methods_combo = self.builder.get_object('combobox_geo_opt')
             self.opt_method_store = Gtk.ListStore(str)
 
+            # . 2026-10-24: readable names; the keys of self.opt_methods are what the job reads
+            _names = {'ConjugatedGradient': 'Conjugate Gradient', 'SteepestDescent': 'Steepest Descent',
+                      'LFBGS': 'L-BFGS', 'QuasiNewton': 'Quasi-Newton', 'FIRE': 'FIRE'}
             for key, method in self.opt_methods.items():
-                self.opt_method_store.append([method])
+                self.opt_method_store.append([_names.get(method, method)])
             
             self.opt_methods_combo.set_model(self.opt_method_store)
             renderer_text = Gtk.CellRendererText()

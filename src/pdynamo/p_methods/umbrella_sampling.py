@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #  
-#  EasyHybrid: Python interface for QM/MM and molecular simulations using pDynamo3
+#  EasyHybrid: Python interface for QC/MM and molecular simulations using pDynamo3
 #  Module: Selection utilities for pDynamo systems
 #
 #  Copyright 2022-2025 Fernando Bachega
@@ -26,7 +26,7 @@
 #
 #  Description:
 #      Provides functions for selecting atoms and residues in pDynamo systems
-#      to facilitate QM/MM partitioning and molecular simulations.
+#      to facilitate QC/MM partitioning and molecular simulations.
 #
 
 
@@ -1372,8 +1372,19 @@ def _us_geo_opt (system, parameters):
                                      logFrequency         = parameters['logFrequency'] ,
                                      maximumIterations    = parameters['maximumIterations'] ,
                                      rmsGradientTolerance = parameters['rmsGradientTolerance']   )
+    # . 2026-10-24: QuasiNewton and FIRE were offered in the window but did nothing
+    elif parameters['optimizer'] == 'QuasiNewton':
+        QuasiNewtonMinimize_SystemGeometry(parameters['system']                               ,
+                                           logFrequency         = parameters['logFrequency'] ,
+                                           maximumIterations    = parameters['maximumIterations'] ,
+                                           rmsGradientTolerance = parameters['rmsGradientTolerance']   )
+    elif parameters['optimizer'] == 'FIRE':
+        FIREMinimize_SystemGeometry(parameters['system']                               ,
+                                    logFrequency         = parameters['logFrequency'] ,
+                                    maximumIterations    = parameters['maximumIterations'] ,
+                                    rmsGradientTolerance = parameters['rmsGradientTolerance']   )
     else:
-        pass
+        raise ValueError('Unknown optimizer: {}'.format(parameters['optimizer']))
 
 
 def _us_molecular_dynamics (system, parameters, path_trajectory, mode = 0, i = None, j = None):
