@@ -963,6 +963,10 @@ class ImagePlot(Canvas):
             remaining sharp.
 
         """
+        # Do not leave a previous frame's click transform active if this
+        # draw has no matrix data (the no-data path below returns early).
+        self.factor_x = None
+        self.factor_y = None
         self.cr =  cr
         self.width = widget.get_allocated_width()   #widget dimentions
         self.height = widget.get_allocated_height() #widget dimentions   
@@ -1060,6 +1064,8 @@ class ImagePlot(Canvas):
         else:
             return False
         x_on_plot, y_on_plot, x, y = self.get_i_and_j_from_click_event (event)
+        if x_on_plot is None or y_on_plot is None:
+            return False
         i = y_on_plot
         j = x_on_plot
         
