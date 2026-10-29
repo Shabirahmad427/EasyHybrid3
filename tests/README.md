@@ -52,6 +52,9 @@ os atributos que essas funções efetivamente leem.
   pDynamo real (ex. `sync_pdynamo_system`) é testado aqui — as funções
   testadas chamam essas integrações por trás de fixtures/dublês que não
   as exercitam de verdade.
+- O teste da biblioteca force-matched importa `fraglib`, um checkout
+  opcional que não é distribuído neste repositório. Ele é marcado como
+  skipped quando esse checkout não está instalado.
 
 Se/quando isso for expandido, os candidatos naturais são: um teste de
 sintaxe (`python -m compileall`) para todo o `src/` (já incluído no CI,

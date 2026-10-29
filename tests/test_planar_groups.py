@@ -33,6 +33,10 @@ def _even_profile(pairs):
 def test_fm_library_planar_bonds_are_planar():
     # . every bond between two trigonal atoms: a single 2-fold term, minimum in the
     #   plane, with the barrier of the calibrated series (fix_planar_torsions.py)
+    pytest.importorskip(
+        "fraglib.run_force_matching",
+        reason="optional fraglib checkout is not installed",
+    )
     from fraglib.run_force_matching import is_planar_bond
     fm = json.load(open(os.path.join(DATA, "dyff_residue_library_fm.json")))["templates"]
     cal = json.load(open(os.path.join(DATA, "dyff_residue_library_calibrated.json")))["templates"]
