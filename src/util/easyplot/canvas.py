@@ -74,15 +74,31 @@ class Canvas(Gtk.DrawingArea):
     def get_i_and_j_from_click_event (self, event):
         """ Function doc """
         (x, y) = int(event.x), int(event.y)
-        
-        x_on_plot = int((x-self.bx)/self.factor_x)
-        y_on_plot = int((y-self.by)/self.factor_y)
+
+        # The plot transform is assigned on the first successful draw.  GTK
+        # can deliver mouse events before that draw (or while there is no
+        # matrix to draw), so treat an uninitialized/degenerate transform as
+        # a click outside the plot instead of raising AttributeError or
+        # dividing by zero.
+        factor_x = getattr(self, 'factor_x', None)
+        factor_y = getattr(self, 'factor_y', None)
+        bx = getattr(self, 'bx', None)
+        by = getattr(self, 'by', None)
+        if (factor_x is None or factor_y is None or bx is None or by is None or
+                factor_x <= 0 or factor_y <= 0):
+            return None, None, x, y
+
+        x_on_plot = int((x-bx)/factor_x)
+        y_on_plot = int((y-by)/factor_y)
         
         return x_on_plot, y_on_plot, x, y
 
     
     def check_clicked_points(self, x_on_plot, y_on_plot):
         """ Function doc """
+
+        if x_on_plot is None or y_on_plot is None:
+            return False
         
         if int(x_on_plot) < 0 or int(x_on_plot) >= self.size_x :
             dprint('canvas')
@@ -110,10 +126,9 @@ class Canvas(Gtk.DrawingArea):
         #(x, y) = int(event.x), int(event.y)
         ##x, y = device.get_position(widget)
         #print("Mouse moved to:", x, y)
-        (x, y) = int(event.x), int(event.y)
-        
-        x_on_plot = int((x-self.bx)/self.factor_x)
-        y_on_plot = int((y-self.by)/self.factor_y)
+        x_on_plot, y_on_plot, x, y = self.get_i_and_j_from_click_event(event)
+        if x_on_plot is None or y_on_plot is None:
+            return False
         
 
         

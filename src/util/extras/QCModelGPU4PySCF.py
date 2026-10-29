@@ -112,6 +112,12 @@ class QCModelGPU4PySCF(QCModel):
 
     def Energy(self, target):
         """Calculate a GPU4PySCF energy and, when requested, its gradient."""
+        if (getattr(target, "symmetry", None) is not None or
+                getattr(target, "symmetryParameters", None) is not None):
+            raise QCModelError(
+                "This GPU4PySCF adapter supports molecular calculations only; "
+                "periodic boundary conditions are not implemented."
+            )
         try:
             import cupy as cp
             import numpy as np
@@ -124,6 +130,12 @@ class QCModelGPU4PySCF(QCModel):
             )
 
         state = getattr(target, self.__class__._stateName)
+        spin_restricted = bool(target.electronicState.isSpinRestricted)
+        if spin_restricted and int(target.electronicState.multiplicity) != 1:
+            raise QCModelError(
+                "GPU4PySCF restricted open-shell calculations are not supported "
+                "by this adapter. Select Unrestricted spin mode."
+            )
         coords = target.scratch.qcCoordinates3AU
         atoms = [(PeriodicTable.Symbol(int(z)), tuple(float(coords[i, j]) for j in range(3)))
                  for i, z in enumerate(state.atomicNumbers)]
@@ -139,9 +151,9 @@ class QCModelGPU4PySCF(QCModel):
         try:
             mol.build()
             if self.method.upper() == "HF":
-                mf = scf.UHF(mol) if spin else scf.RHF(mol)
+                mf = scf.RHF(mol) if spin_restricted else scf.UHF(mol)
             elif self.method.upper() == "DFT":
-                mf = dft.UKS(mol) if spin else dft.RKS(mol)
+                mf = dft.RKS(mol) if spin_restricted else dft.UKS(mol)
                 mf.xc = _GPUFunctionalName(self.functional)
             else:
                 raise QCModelError("GPU4PySCF method must be HF or DFT (got {!r}).".format(self.method))

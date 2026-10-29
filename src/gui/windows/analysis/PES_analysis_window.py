@@ -740,7 +740,8 @@ class PotentialEnergyAnalysisWindow:
         
             '''get the points on the graph where the click was made'''
             i_on_plot, j_on_plot, x, y = widget.get_i_and_j_from_click_event(event)
-            
+            if i_on_plot is None or j_on_plot is None:
+                return False
             
             '''
             checks if the place where click happened is outside the graphic or not. 

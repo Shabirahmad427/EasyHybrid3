@@ -13,6 +13,11 @@ functional registry includes aliases and low-level LibXC components, so an
 autocomplete suggestion is not a promise that GPU4PySCF implements it. Basis
 suggestions exclude aliases marked as density-fitting/auxiliary sets. Basis
 availability can still depend on the elements and pseudopotentials in a system.
+The adapter uses molecular PySCF objects and rejects periodic systems; it does
+not implement periodic boundary conditions. The GUI's spin-restricted option
+is honored for singlets, and unrestricted calculations use GPU4PySCF's UHF/UKS
+classes. Restricted open-shell calculations are rejected because this adapter
+does not provide their gradient path.
 
 ### Omega functionals and dispersion names
 
@@ -69,6 +74,10 @@ periodic-table/ECP validation. The prior 24 matched CPU/GPU energy-and-gradient
 calculations remain the molecule-level comparison set.
 
 ## Current limitations and verification
+
+- The pDynamo-facing adapter does not currently provide dipole moments, bond
+  orders, atomic spin populations, or periodic calculations. These properties
+  are not inferred from the returned Mulliken charges or energies.
 
 - A GPU-backed QM/MM energy and gradient calculation completed for a
   pDynamo alanine-dipeptide example with a four-atom QM selection and OPLS MM

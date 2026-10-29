@@ -151,7 +151,7 @@ class SinglePointWindow:
         parameters["filename"]  = self.builder.get_object('entry_logfile_name').get_text()
         parameters['obj1_key6'] = vobject.key6
         parameters['logfile']   = os.path.join(parameters["folder"], parameters["filename"]+'.log')
-        dprint ('\n\n\Parameters:' , parameters)
+        dprint ('\n\nParameters:' , parameters)
         #------------------------------------------------------------------#
         #                      RUN ENERGY CALCULATION                      #
         #------------------------------------------------------------------#

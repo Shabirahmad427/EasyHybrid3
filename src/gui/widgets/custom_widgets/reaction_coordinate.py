@@ -243,7 +243,7 @@ class AdvancedReactionCoordinateBox(Gtk.Box):
             pass    
               
     def import_picking_selection_data (self, widget):
-        """  
+        r"""
                    R                    R
                     \                  /
                      A1--A2  . . . . A3
@@ -1080,7 +1080,7 @@ class ReactionCoordinateBox(Gtk.Box):
             pass    
               
     def import_picking_selection_data (self, widget):
-        """  
+        r"""
                    R                    R
                     \                  /
                      A1--A2  . . . . A3
