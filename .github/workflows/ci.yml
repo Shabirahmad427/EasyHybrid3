@@ -1,0 +1,69 @@
+name: CI
+
+# CI "basico", propositalmente sem GTK/OpenGL/display: compila as
+# extensoes Cython do submodulo graphics_engine (mesmo comando que
+# install.py ja usa) e roda a suite de testes de logica pura em tests/
+# -- ver tests/README.md para o que exatamente esta (e nao esta)
+# coberto por isso.
+
+on:
+  push:
+  pull_request:
+    branches: [ main, dev ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  syntax-check:
+    name: Project-wide syntax check (Linux)
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout (including the graphics submodule)
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Byte-compile source files
+        run: python -m compileall -q -x '/trash/' src easyhybrid.py install.py tests
+
+  test:
+    name: Logic tests (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, windows-2025, macos-15]
+    steps:
+      - name: Checkout (including the graphics submodule)
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install test and extension-build dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy Cython freetype-py PyOpenGL -r requirements-dev.txt
+
+      - name: Build the graphics engine Cython extensions
+        working-directory: src/graphics_engine
+        run: python setup.py build_ext --inplace
+
+      - name: Run logic tests
+        run: python -m pytest tests/ -v
