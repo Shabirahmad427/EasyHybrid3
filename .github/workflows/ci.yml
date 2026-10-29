@@ -59,7 +59,7 @@ jobs:
       - name: Install test and extension-build dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install numpy Cython freetype-py PyOpenGL -r requirements-dev.txt
+          python -m pip install setuptools wheel numpy Cython freetype-py PyOpenGL -r requirements-dev.txt
 
       - name: Build the graphics engine Cython extensions
         working-directory: src/graphics_engine
