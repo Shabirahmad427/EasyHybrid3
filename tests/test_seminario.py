@@ -50,7 +50,7 @@ def test_frequencies_from_xtb_hessian():
 
 def test_seminario_recovers_dyff_bond_constants():
     pytest.importorskip("pBabel")
-    from fraglib import mm_tools as M
+    M = pytest.importorskip("fraglib.mm_tools", reason="optional fraglib checkout is not installed")
     mapped, mol, xyz = _mapped("CCO")                      # ethanol
     system, rd = M.dyff_system(mapped, 0)
     x = M.optimize(system, xyz)
@@ -68,7 +68,7 @@ def test_seminario_recovers_dyff_bond_constants():
 
 def test_per_term_edits_change_only_that_term():
     pytest.importorskip("pBabel")
-    from fraglib import mm_tools as M
+    M = pytest.importorskip("fraglib.mm_tools", reason="optional fraglib checkout is not installed")
     mapped, mol, xyz = _mapped("CCO")
     system, rd = M.dyff_system(mapped, 0)
     e0 = M.energy(system, xyz)
@@ -164,7 +164,7 @@ def test_outofplane_round_trip():
         curvature fit recovers scale 2 per centre; the per-centre edit scales
         exactly the out-of-plane energy. """
     pytest.importorskip("pBabel")
-    from fraglib import mm_tools as M
+    M = pytest.importorskip("fraglib.mm_tools", reason="optional fraglib checkout is not installed")
     mapped, mol, xyz = _mapped("CC(=O)Nc1ccccc1")          # acetanilide
     make = lambda edits: M.dyff_system(mapped, 0, edits)[0]
     system = make(None)

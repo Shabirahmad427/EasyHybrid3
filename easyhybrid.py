@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-#  
+#
 #  EasyHybrid: Python interface for QM/MM and molecular simulations using pDynamo3
 #  Module: Selection utilities for pDynamo systems
 #
@@ -103,8 +103,8 @@ def _maybe_disable_vsync_for_intel_igpu():
 _maybe_disable_vsync_for_intel_igpu()
 
 '''
-O módulo re é nativo do Python (faz parte da biblioteca padrão).  
-Você não precisa instalar nada.Ele implementa expressões regulares 
+O módulo re é nativo do Python (faz parte da biblioteca padrão).
+Você não precisa instalar nada.Ele implementa expressões regulares
 (regular expressions) para busca e manipulação de texto.
 '''
 
@@ -362,7 +362,7 @@ class SplashScreen(Gtk.Window):
 def load_modules(callback_final):
     def _load():
         logging.info("Starting module loading...")
-        time.sleep(1.5)   
+        time.sleep(1.5)
         GLib.idle_add(callback_final)  #Call the finalize function in the main loop
     threading.Thread(target=_load).start()
 
@@ -378,7 +378,7 @@ sys.argv = [sys.argv[0]] + [a for a in sys.argv[1:] if a not in _CONTROL_FLAGS]
 def main():
     splash = SplashScreen()
     splash.show_all()
-    
+
     def on_finalizado():
         logging.basicConfig(format="%(asctime)s,%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s",
                             datefmt="%Y-%m-%d:%H:%M:%S", level=logging.DEBUG)
@@ -393,8 +393,8 @@ def main():
         # salvo, desfazendo a correcao que _check_startup_path() ja tinha
         # aplicado -- causa direta de um AttributeError/TypeError com
         # startup_path=None mais adiante, em EasyHybridPreferencesWindow.
-        
-        
+
+
         # Optional interface theme (src/gui/theme.py): "default" = original look.
         # Try another one without saving anything:  EASYHYBRID_THEME=ribbon_dark
         try:
@@ -408,7 +408,7 @@ def main():
         main_window = MainWindow(vm_session = vm_session,
                                  home       =  EASYHYBRID_HOME,
                                  version    = EASYHYBRID_VERSION)
-        vm_session.main_session = main_window                  
+        vm_session.main_session = main_window
         # dark themes: lighten the main window's dark line-drawing icons
         # (reversible; follows live theme switches from Preferences)
         try:
@@ -425,61 +425,61 @@ def main():
             traceback.print_exc()
         #print(vm_session.vm_config.gl_parameters)
         #main_window.window.connect('destroy', Gtk.main_quit)
-        
-        
+
+
         # do now show these itens:
-        
+
         #main_window.builder.get_object('toolbutton_export_img').hide()
         #main_window.builder.get_object('button_task_list')           .hide()
-        
+
         main_window.builder.get_object('test_item')       .hide() # IR spectrum
-        
+
         #This is the editor
         #This is the editor
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
         #main_window.builder.get_object('toolbutton_terminal')   .hide()
         #main_window.builder.get_object('menuitem_reimaging')   .hide()
         #main_window.builder.get_object('menuitem_RMSD_tool')   .hide()
-        
+
         #main_window.builder.get_object('_show_cell')      .hide() # Builder
         #main_window.builder.get_object('menuitem_rama')   .hide()
         #main_window.builder.get_object('menuitem_transition_state_search').hide() # Baker method
         #main_window.builder.get_object('menuitem_reaction_path')   .hide() # IRC / Reaction Path...
         #main_window.builder.get_object('menuitem_cpr')   .hide() # Conjugate Peak Refinement...
-        
-        
+
+
         main_window.builder.get_object('menuitem_extras') .hide() # Extras
         #main_window.builder.get_object('menuitem_rdf_analysis')   .hide() # RDF Analysis (g(r))
-        
+
         main_window.builder.get_object('menuitem_advanced_rc_scans')   .hide() # RDF Analysis (g(r))
-        
-        
-        
-        
+
+
+
+
         #'''AI assistent'''
-        main_window.builder.get_object('menuitem_control_server')   .hide()  
-        main_window.builder.get_object('menuitem_control_settings')   .hide()  
-        main_window.builder.get_object('menuitem_ai_assistant')   .hide()  
+        main_window.builder.get_object('menuitem_control_server')   .hide()
+        main_window.builder.get_object('menuitem_control_settings')   .hide()
+        main_window.builder.get_object('menuitem_ai_assistant')   .hide()
         #
         #'''Remote jobs'''
-        main_window.builder.get_object('menuitem_remote_machines')   .hide()  
-        main_window.builder.get_object('menuitem_run_on')   .hide()  
-        
-        
-        
-        
-        
-        
-        
-        
+        main_window.builder.get_object('menuitem_remote_machines')   .hide()
+        main_window.builder.get_object('menuitem_run_on')   .hide()
+
+
+
+
+
+
+
+
         #main_window.builder.get_object('menuitem_advanced_rc_scans').hide()
-        
+
         splash.destroy()
         # . BUG FIX: this used to unconditionally read sys.argv[-1] (the
         #   script's own path when no file was actually passed) and call

@@ -68,6 +68,8 @@ def test_wrong_atom_type_shows_up_as_strain(adenosine):
     carbon = next(r for r in before["atoms"] if r["type"] == "C:Tet")
     set_manual_atom_type_override(adenosine, carbon["atom_id"], "C:Lin")
     after = D.build_tables(adenosine)
+    assert after["error"] is None, after["error"]
+    assert after["error"] is None, after["error"]
     assert max(r["strain"] for r in after["angle"]) > max(worst_before, D.STRAIN_YELLOW)
     row = next(r for r in after["atoms"] if r["atom_id"] == carbon["atom_id"])
     assert row["level"] == "blue" and row["type"] == "C:Lin"
